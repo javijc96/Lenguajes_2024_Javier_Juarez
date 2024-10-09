@@ -8,15 +8,31 @@
         <style>
             table, th, td{
             border: 1px solid black;
+            border-collapse: collapse;
         }
+        .javifondo{
+            background:yellowgreen;
+        }
+        .quiquefondo{
+            background: plum;
+        }
+        .aminfondo{
+            background:aquamarine;
+        }
+        .rafafondo{
+            background:orange;
+        }
+        .convalifondo{
+            background:grey;
+        }
+
         </style>
 
     </head>
-
         <body> 
-            <h1>horario</h1> 
-<table>
-    <tr>
+            <h1>Horario de 1º de DAW</h1> 
+<table width="1300" height="850" style="text-align: center;">
+    <tr class="bordestitulo">
         <th>horas</th>
         <th>Lunes</th>
         <th>Martes</th>
@@ -25,52 +41,52 @@
         <th>Viernes</th>
     </tr>
     <tr>
-        <td>15</td>
-        <td>Lenguaje</td>
-        <td>Sistemas</td>
-        <td>Fol wannabe</td>
-        <td>Fol wannabe</td>
-        <td>Lenguaje</td>
+        <td>15:00 a 16:00</td>
+        <td class="quiquefondo">Lenguaje</td><!--lunes-->
+        <td class="quiquefondo">Sistemas</td><!--Martes-->
+        <td class="convalifondo">IPE</td><!--Miercoles-->
+        <td rowspan="2" class="convalifondo">IPE</td><!--Jueves-->
+        <td rowspan="2" class="quiquefondo">Lenguaje</td><!--viernes-->
     </tr>
     <tr>
-        <td>16</td>
-        <td>Sistemas</td>
-        <td>Base de datos</td>
-        <td>Programacion</td>
-        <td>Fol wannabe</td>
-        <td>Lenguaje</td>
+        <td>16:00 a 17:00</td>
+        <td class="quiquefondo">Sistemas</td><!--lunes-->
+        <td rowspan="3" class="rafafondo">Base de datos</td><!--Martes-->
+        <td rowspan="3" class="javifondo">Programacion</td><!--Miercoles-->
+        <!--Jueves-->
+        <!--viernes-->
     </tr>
     <tr>
-        <td>17</td>
-        <td>Entornos</td>
-        <td>Base de datos</td>
-        <td>Programacion</td>
-        <td>Entornos</td>
-        <td>Sistemas</td>
+        <td>17:00 a 18:00</td>
+        <td rowspan="2" class="javifondo">Entornos</td><!--lunes-->
+        <!--Martes-->
+        <!--Miercoles-->
+        <td class="javifondo">Entornos</td><!--Jueves-->
+        <td class="quiquefondo">Sistemas</td><!--viernes-->
     </tr>
     <tr>
-        <td>18</td>
-        <td>Entornos</td>
-        <td>Base de datos</td>
-        <td>Programacion</td>
-        <td>Base de datos</td>
-        <td>Programacion</td>
+        <td>18:00 a 19:00</td>
+        <!--lunes-->
+        <!--Martes-->
+        <!--Miercoles-->
+        <td rowspan="3" class="rafafondo">Base de datos</td><!--Jueves-->
+        <td rowspan="3" class="javifondo">Programacion</td><!--viernes-->
     </tr>
     <tr>
-        <td>19</td>
-        <td>Sostenibilidad</td>
-        <td>Programacion</td>
-        <td>Sistemas</td>
-        <td>Base de datos</td>
-        <td>Programacion</td>
+        <td>19:00 a 20:00</td>
+        <td class="aminfondo">Sostenibilidad</td><!--lunes-->
+        <td rowspan="2" class="javifondo">Programacion</td><!--Martes-->
+        <td rowspan="2" class="quiquefondo">Sistemas</td><!--Miercoles-->
+        <!--Jueves-->
+        <!--viernes-->
     </tr>
     <tr>
-        <td>20</td>
-        <td>Digitalizacion</td>
-        <td>Programacion</td>
-        <td>Sistemas</td>
-        <td>Base de datos</td>
-        <td>Programacion</td>
+        <td>20:00 a 21:00</td>
+        <td class="aminfondo">Digitalizacion</td><!--lunes-->
+        <!--Martes-->
+        <!--Miercoles-->
+        <!--Jueves-->
+        <!--viernes-->
     </tr>
 </table> 
         </body>
