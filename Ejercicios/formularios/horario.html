@@ -4,14 +4,23 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>horario</title>
+        <title>horario</title><!--despues de intentar muchas cosas para centrar el horario en distintos tamaños al final me decidi por hacerlo tamaño completo sin scroll probando
+        con el padding hasta encontrar el numero especifico que me gustó-->
         <style>
-            table, th, td{
+            table{
+            width: 100%;
+            border-collapse:collapse;
+        }
+            th, td{         
             border: 1px solid black;
             border-collapse: collapse;
+            padding: 52px; 
+        } 
+        th{
+            background:rgb(70, 156, 226)
         }
         .javifondo{
-            background:yellowgreen;
+            background:rgb(138, 189, 37);
         }
         .quiquefondo{
             background: plum;
@@ -20,18 +29,16 @@
             background:aquamarine;
         }
         .rafafondo{
-            background:orange;
+            background:rgb(255, 209, 122);
         }
         .convalifondo{
             background:grey;
         }
-
         </style>
-
     </head>
         <body> 
-            <h1>Horario de 1º de DAW</h1> 
-<table width="1300" height="850" style="text-align: center;">
+            <h1 style="text-align: center;">Horario de 1º de DAW</h1> 
+<table style="text-align: center;" style= "padding-right:50px; padding-left: 50px">
     <tr class="bordestitulo">
         <th>horas</th>
         <th>Lunes</th>
