@@ -1,100 +1,111 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>horario</title><!--despues de intentar muchas cosas para centrar el horario en distintos tamaños al final me decidi por hacerlo tamaño completo sin scroll probando
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>horario</title><!--despues de intentar muchas cosas para centrar el horario en distintos tamaños al final me decidi por hacerlo tamaño completo sin scroll probando
         con el padding hasta encontrar el numero especifico que me gustó-->
-        <style>
-            table{
+    <style>
+        table {
             width: 100%;
-            border-collapse:collapse;
+            border-collapse: collapse;
         }
-            th, td{         
+
+        th,
+        td {
             border: 1px solid black;
             border-collapse: collapse;
-            padding: 52px; 
-        } 
-        th{
-            background:rgb(70, 156, 226)
+            padding: 52px;
         }
-        .javifondo{
-            background:rgb(138, 189, 37);
+
+        th {
+            background: rgb(70, 156, 226)
         }
-        .quiquefondo{
+
+        .javifondo {
+            background: rgb(138, 189, 37);
+        }
+
+        .quiquefondo {
             background: plum;
         }
-        .aminfondo{
-            background:aquamarine;
+
+        .aminfondo {
+            background: aquamarine;
         }
-        .rafafondo{
-            background:rgb(255, 209, 122);
+
+        .rafafondo {
+            background: rgb(255, 209, 122);
         }
-        .convalifondo{
-            background:grey;
+
+        .convalifondo {
+            background: grey;
         }
-        </style>
-    </head>
-        <body> 
-            <h1 style="text-align: center;">Horario de 1º de DAW</h1> 
-<table style="text-align: center;" style= "padding-right:50px; padding-left: 50px">
-    <tr>
-        <th>horas</th>
-        <th>Lunes</th>
-        <th>Martes</th>
-        <th>Miercoles</th>
-        <th>Jueves</th>
-        <th>Viernes</th>
-    </tr>
-    <tr>
-        <td>15:00 a 16:00</td>
-        <td class="quiquefondo">Lenguaje</td><!--lunes-->
-        <td class="quiquefondo">Sistemas</td><!--Martes-->
-        <td class="convalifondo">IPE</td><!--Miercoles-->
-        <td rowspan="2" class="convalifondo">IPE</td><!--Jueves-->
-        <td rowspan="2" class="quiquefondo">Lenguaje</td><!--viernes-->
-    </tr>
-    <tr>
-        <td>16:00 a 17:00</td>
-        <td class="quiquefondo">Sistemas</td><!--lunes-->
-        <td rowspan="3" class="rafafondo">Base de datos</td><!--Martes-->
-        <td rowspan="3" class="javifondo">Programacion</td><!--Miercoles-->
-        <!--Jueves-->
-        <!--viernes-->
-    </tr>
-    <tr>
-        <td>17:00 a 18:00</td>
-        <td rowspan="2" class="javifondo">Entornos</td><!--lunes-->
-        <!--Martes-->
-        <!--Miercoles-->
-        <td class="javifondo">Entornos</td><!--Jueves-->
-        <td class="quiquefondo">Sistemas</td><!--viernes-->
-    </tr>
-    <tr>
-        <td>18:00 a 19:00</td>
-        <!--lunes-->
-        <!--Martes-->
-        <!--Miercoles-->
-        <td rowspan="3" class="rafafondo">Base de datos</td><!--Jueves-->
-        <td rowspan="3" class="javifondo">Programacion</td><!--viernes-->
-    </tr>
-    <tr>
-        <td>19:00 a 20:00</td>
-        <td class="aminfondo">Sostenibilidad</td><!--lunes-->
-        <td rowspan="2" class="javifondo">Programacion</td><!--Martes-->
-        <td rowspan="2" class="quiquefondo">Sistemas</td><!--Miercoles-->
-        <!--Jueves-->
-        <!--viernes-->
-    </tr>
-    <tr>
-        <td>20:00 a 21:00</td>
-        <td class="aminfondo">Digitalizacion</td><!--lunes-->
-        <!--Martes-->
-        <!--Miercoles-->
-        <!--Jueves-->
-        <!--viernes-->
-    </tr>
-</table> 
-        </body>
-    </html>
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center;">Horario de 1º de DAW</h1>
+    <table style="text-align: center;" style="padding-right:50px; padding-left: 50px">
+        <tr>
+            <th>horas</th>
+            <th>Lunes</th>
+            <th>Martes</th>
+            <th>Miercoles</th>
+            <th>Jueves</th>
+            <th>Viernes</th>
+        </tr>
+        <tr>
+            <td>15:00 a 16:00</td>
+            <td class="quiquefondo">Lenguaje</td><!--lunes-->
+            <td class="quiquefondo">Sistemas</td><!--Martes-->
+            <td class="convalifondo">IPE</td><!--Miercoles-->
+            <td rowspan="2" class="convalifondo">IPE</td><!--Jueves-->
+            <td rowspan="2" class="quiquefondo">Lenguaje</td><!--viernes-->
+        </tr>
+        <tr>
+            <td>16:00 a 17:00</td>
+            <td class="quiquefondo">Sistemas</td><!--lunes-->
+            <td rowspan="3" class="rafafondo">Base de datos</td><!--Martes-->
+            <td rowspan="3" class="javifondo">Programacion</td><!--Miercoles-->
+            <!--Jueves-->
+            <!--viernes-->
+        </tr>
+        <tr>
+            <td>17:00 a 18:00</td>
+            <td rowspan="2" class="javifondo">Entornos</td><!--lunes-->
+            <!--Martes-->
+            <!--Miercoles-->
+            <td class="javifondo">Entornos</td><!--Jueves-->
+            <td class="quiquefondo">Sistemas</td><!--viernes-->
+        </tr>
+        <tr>
+            <td>18:00 a 19:00</td>
+            <!--lunes-->
+            <!--Martes-->
+            <!--Miercoles-->
+            <td rowspan="3" class="rafafondo">Base de datos</td><!--Jueves-->
+            <td rowspan="3" class="javifondo">Programacion</td><!--viernes-->
+        </tr>
+        <tr>
+            <td>19:00 a 20:00</td>
+            <td class="aminfondo">Sostenibilidad</td><!--lunes-->
+            <td rowspan="2" class="javifondo">Programacion</td><!--Martes-->
+            <td rowspan="2" class="quiquefondo">Sistemas</td><!--Miercoles-->
+            <!--Jueves-->
+            <!--viernes-->
+        </tr>
+        <tr>
+            <td>20:00 a 21:00</td>
+            <td class="aminfondo">Digitalizacion</td><!--lunes-->
+            <!--Martes-->
+            <!--Miercoles-->
+            <!--Jueves-->
+            <!--viernes-->
+        </tr>
+    </table>
+</body>
+
+</html>
