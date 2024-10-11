@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Javier Juarez Canals">
+    <title>formularioinscripcion</title>
+    <style>
+
+       h1{
+        text-align: center;
+       }
+       body{
+        justify-content: center;
+        align-items: center;
+        background-color: whitesmoke;
+        padding: 50px;
+        border: 1px solid black;
+       }
+       form{
+        border: 1px solid black;
+        display: block;
+       }
+       label {
+        padding-right: 10px;
+        width: 200px;
+       }
+       .inputlargo{
+        width: 60%;
+        padding:5px;
+        border-radius: 3px;
+        margin-bottom: 3px;
+        margin-top: 3px;
+
+       }
+       .labelyinput {
+            display: flex;
+            margin-bottom: 10px;
+       }
+       .inputcorto{
+        width: 30%;
+        padding: 5px;
+        border-radius: 3px;
+        margin-top: 3px;
+        margin-bottom: 3px;
+
+       }
+       .textorojo{
+        font-size: 0.7em;
+        color: red;
+        text-align:right
+       } 
+       .enviar{
+        width: 30%;
+        display: block;
+        margin: auto;
+       }
+       .imagen{
+        width: 10%;
+       }
+
+    </style>
+    <b>
+</head>
+<h1><img class="imagen" src="../imágenes/iconoformulario1.png" align left> Formulario de inscripción al sistema</h1>
+
+<body style=width:1000px ; leftmargin="200" ; rightmargin="100" ; topmargin="100";>
+<p class="textorojo">Todos los campos son obligatorios</p> 
+<form name="inscripcionasistema" method="post"></form>
+
+    <div class="labelyinput">
+        <label for="nombres">Nombres</label>
+            <input class="inputlargo" type="text" name="nombres" size="40">
+    </div>
+    <div class="labelyinput">
+        <label for="apellidos">Apellidos</label>
+            <input class="inputlargo" type="text" name="apellidos">
+    </div> 
+    <div class="labelyinput">
+        <label for="empresa">Empresa/institución</label>     
+            <input class="inputlargo" type="text" name="empresa">
+    </div>
+    <div class="labelyinput">
+        <label for="ambitoempresa">Ámbito de la empresa</label>
+            <select class="inputlargo" id="ambitoempresa" name="ambitoempresa">
+                <option value="Agricultura">Agricultura</option>
+                <option value="Educacion">Educación</option>
+                <option value="Salud">Salud</option>
+                <option value="Tecnologia">Tecnología</option>
+            </select>
+    </div>
+    <div class="labelyinput">
+        <label for="cargo">Cargo</label>     
+            <input class="inputlargo" type="text" name="cargo">
+    </div>
+    <div class="labelyinput">
+        <label for="nombreusuario">Nombre de usuario</label>    
+            <input class=inputcorto type="text" name="nombreusuario"> <small>(Nombre con el que se identificará dentro del sistema)</small>
+    </div>
+    <div class="labelyinput">
+        <label for="contrasenya">Contraseña</label>
+            <input class=inputcorto type="password" name="contrasenya"> <small>(Procure utilizar combinaciones alfanuméricas)</small>
+    </div>
+    <div class="labelyinput">
+        <label for="repitacontrasenya">Repita contraseña</label>
+            <input class=inputcorto type="password" name="repitacontrasenya">
+    </div>
+    <div class="labelyinput">
+        <label for="email">Correo electrónico</label>
+            <input class=inputcorto type="text" name="email">
+    </div>
+    <div class="enviar">
+        <input type="checkbox" name="terminos">
+        <label for="checkbox"><small>He leido y acepto los términos del sistema</small></label>
+    </div>
+    <div>
+        <button class="enviar" type="submit">Enviar formulario</button>
+    </div>
+    <a href="./index.html">Index de tablas y formulario</a>
+</form>
+</body>
