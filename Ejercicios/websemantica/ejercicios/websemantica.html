@@ -25,7 +25,7 @@
         }
 
         nav a {
-            background-color: grey;
+            color: white;
             margin: 0 10px;
             font-weight: bold;
             text-decoration: none;
@@ -47,12 +47,23 @@
             flex-wrap: wrap;
         }
 
+        header,
+        footer {
+            text-align: center;
+            background-color: #2e9937;
+            color: white;
+            padding: 1em;
+            width: 100%;
+            border-radius: 8px;
+        }
+
         aside {
             flex: 1 1 35%;
             max-width: 250px;
             padding-left: 15px;
             margin-left: 15px;
-            
+            border: 1px solid grey;
+            border-radius: 8px;
         }
 
         article {
@@ -66,8 +77,6 @@
             border-radius: 5px;
             margin-top: 10px;
             bottom: 0;
-            
-
         }
 
         image {
@@ -78,12 +87,11 @@
 
         .fotos {
             max-width: 100%;
-            border-radius: 8px;
-            
-            /*pa rendodear fotos con bordes*/
+            border-radius: 8px;  /*pa rendodear fotos con bordes*/
         }
-        .logo{
-            align-items: flex-end;
+
+        .logo {
+            border-radius: 8px;
         }
     </style>
 </head>
@@ -93,7 +101,9 @@
 
     <header>
         <h1>Animáles increibles</h1>
-        <aside><figure><img class=logo src="../imagenes/logojjc.PNG"></figure></aside>
+        <aside>
+            <figure><img class=logo src="../imagenes/logojjc.PNG"></figure>
+        </aside>
         <nav>
             <a href="/gamba mantis/">Gamba Mantis </a>
             <a href="/ajolote"> ajolote</a>
@@ -111,12 +121,13 @@
             <article>Este pequeño crustaceo vive en el gran arrecife de coral de Australia es capaz de mover sus ojos de
                 forma independiente y estos captan infrarrojos y ultravioleta, esto y mas datos sobre su vista le ayudan
                 en su alimentación sindo capaz de ver animales casi transparentes.</article>
-                <aside>
-                    <figure><img class="fotos" src="../imagenes/gambamantis.PNG">
+            <aside>
+                <figure><img class="fotos" src="../imagenes/gambamantis.PNG">
                     <figcaption>
-                        El one punch man del mundo animal
-                    </figcaption></figure>
-                </aside>
+                        La envidia de cualquier boxeador
+                    </figcaption>
+                </figure>
+            </aside>
             <article>Llamado tambien <i>Gonodactylus smithii</i>, es conocido por los buzos por su agresividad y lo
                 afilado de sus tenazas, por ello lo nombran <i>"rajador de pulgares"</i>. <b>El dato mas interesante</b>
                 sobre estos animales es que sus pinzas con forma de guante de boxeo pueden golpear y matar con una
@@ -124,7 +135,7 @@
                 que equivale a <b>una fuerza de 1500 Newton.</b> </article>
 
             <footer>
-                <p>La gamba mantis es conocida como el one punch man del mundo animal y nada mas que por eso merece el
+                <p>La gamba mantis es conocida como el one punch man del mundo animal, un puñetazo suyo hace que el agua alrededor de su area de impacto llegue a la temperatura de la superficie del sol
                     primer puesto en la lista de animales interesantes.</p>
             </footer>
         </section>
@@ -136,10 +147,10 @@
             <article>Es un animal anfibio relacionado con la salamandra. Es un animal endémico de una zona de Mexico se
                 encuentra en peligro crítico de extinción. Su popularidad en los ultimos tiempos se debe a que su
                 aspecto le lleva a ser cotizado como mascota exótica.</article>
-                <aside>
-                    <figure><img class="fotos" src="../imagenes/ajolote.jpg"></figure>
-                    <figcaption>El regenerador</figcaption>
-                </aside>
+            <aside>
+                <figure><img class="fotos" src="../imagenes/ajolote.jpg"></figure>
+                <figcaption>El regenerador</figcaption>
+            </aside>
             <article>La característica del ajolote más interesante es su <b>regeneración</b>; este animal no cicatriza y
                 puede regenerar extremidades perdidas en meses e incluso partes más vitales, como las extremidades, el
                 sistema nervioso y tejidos del ojo y el corazón. Pueden incluso llegar a restaurar partes no vitales de
@@ -157,19 +168,19 @@
             <article>Este mono es tambien llamado <i>chimpancé pigmeo</i>, es bastante menos conocido que el chimpance
                 comun ya que no suele versele lejos de su territorio, el cual se encuentra en las selvas húmedas de
                 Africa.</article>
-                <aside>
-                    <figure><img class="fotos" src="../imagenes/bonobo.jpg"></figure>
-                </aside>
+            <aside>
+                <figure><img class="fotos" src="../imagenes/bonobo.jpg"></figure>
+                <figcaption>El hermano pequeño del ser humano</figcaption>
+            </aside>
             <article>Lo que hace particular a este animal es el hecho de que es lo mas cercano que existe al ser humano
                 en el mundo animal, muestran empatía, son capaces de usar herramientas y su costumbre de caminar
-                erguidos</article>
+                erguidos. Estos animales que pasan la llamada <i>"prueba del espejo"</i>, que demuestra
+                la <b>conciencia sobre uno mismo</b>.</article>
 
             <footer>
-                <p>Son tan inteligentes estos animales que pasan la llamada <i>"prueba del espejo"</i>, que demuestra
-                    la <b>conciencia sobre uno mismo</b>. En <i>el Great Ape Trust</i>, un centro donde acogen a
-                    bonobos, a
-                    algunos de ellos se les enseña a hablar para comunicarse, en este centro hay dos bonobos que han
-                    aprendido 500 palabras de un lenguaje sencillo con el que se comunican con sus cuidadores humanos
+                <p> En <i>el Great Ape Trust</i>, un centro donde acogen a
+                    bonobos, se les enseña a comunicarse, en este centro hay dos bonobos que han
+                    aprendido 500 palabras de un lenguaje sencillo con el que se comunican con sus cuidadores humanos.
                 </p>
             </footer>
         </section>
@@ -178,11 +189,11 @@
             <header>
                 <h2 id="ornitorrinco">Ornitorrinco</h2>
             </header>
-            <article></article>
+            <article>El ornitorrinco es un animal único en su especie. Es un mamífero con características de reptil y ave, capaz de poner huevos y producir veneno. Este curioso animal se encuentra en Australia y ha desafiado la clasificación científica.</article>
             <aside>
                 <figure><img class="fotos" src="../imagenes/ornitorrinco.jpg"></figure>
             </aside>
-            <article></article>
+            <article>El ornitorrinco tiene espolones venenosos en sus patas traseras, una característica rara entre los mamíferos. También cuenta con un sistema de detección electromagnética que le ayuda a cazar en el agua.</article>
 
             <footer>
                 <p></p>
