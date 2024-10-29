@@ -1,0 +1,22 @@
+/* fondo negro */
+.fondo {
+    background-image: url("../imagenes/fondopamarte2.PNG");
+}
+
+/* Tamaño de la imagen */
+.tamaño {
+    width: 50%;
+    float: center; /*imagen a la derecha */
+    margin-left: 15px; /* separa la imagen del texto */
+    border-radius: 8px; /*principalmente para que el sol no se vea tan feo */
+}
+
+/*Color de texto */
+body, h1, p, a, blockquote {
+    color: white;
+}
+body {
+    max-width: 1000px;
+    margin: 100px auto; 
+    padding: 0 20px;
+}
