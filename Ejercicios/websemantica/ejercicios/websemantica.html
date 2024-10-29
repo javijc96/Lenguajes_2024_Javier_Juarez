@@ -57,6 +57,14 @@
             border-radius: 8px;
         }
 
+        footer {
+            text-align: center;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+            bottom: 0;
+        }
+
         aside {
             flex: 1 1 35%;
             max-width: 250px;
@@ -71,23 +79,22 @@
             padding-right: 15px;
         }
 
-        footer {
-            text-align: center;
-            padding: 10px;
-            border-radius: 5px;
-            margin-top: 10px;
-            bottom: 0;
-        }
-
         image {
             width: 100%;
             height: auto;
             border-radius: 8px;
         }
 
+        video,
+        iframe {
+            border-radius: 8px;
+        }
+
+
         .fotos {
             max-width: 100%;
-            border-radius: 8px;  /*pa rendodear fotos con bordes*/
+            border-radius: 8px;
+            /*pa rendodear fotos con bordes*/
         }
 
         .logo {
@@ -105,10 +112,10 @@
             <figure><img class=logo src="../imagenes/logojjc.PNG"></figure>
         </aside>
         <nav>
-            <a href="/gamba mantis/">Gamba Mantis </a>
-            <a href="/ajolote"> ajolote</a>
-            <a href="/bonobo/" bonobo>Bonobo </a>
-            <a href="/ornitorrinco/" ornitorrinco>Ornitorrinco </a>
+            <a href="#gambamantis">Gamba Mantis </a>
+            <a href="#ajolote"> Ajolote</a>
+            <a href="#bonobo" bonobo>Bonobo </a>
+            <a href="#ornitorrinco" ornitorrinco>Ornitorrinco </a>
         </nav>
     </header>
 
@@ -120,23 +127,27 @@
             </header>
             <article>Este pequeño crustaceo vive en el gran arrecife de coral de Australia es capaz de mover sus ojos de
                 forma independiente y estos captan infrarrojos y ultravioleta, esto y mas datos sobre su vista le ayudan
-                en su alimentación sindo capaz de ver animales casi transparentes.</article>
-            <aside>
-                <figure><img class="fotos" src="../imagenes/gambamantis.PNG">
-                    <figcaption>
-                        La envidia de cualquier boxeador
-                    </figcaption>
-                </figure>
-            </aside>
-            <article>Llamado tambien <i>Gonodactylus smithii</i>, es conocido por los buzos por su agresividad y lo
+                en su alimentación sindo capaz de ver animales casi transparentes.
+                <br>Llamado tambien <i>Gonodactylus smithii</i>, es conocido por los buzos por su agresividad y lo
                 afilado de sus tenazas, por ello lo nombran <i>"rajador de pulgares"</i>. <b>El dato mas interesante</b>
                 sobre estos animales es que sus pinzas con forma de guante de boxeo pueden golpear y matar con una
                 aceleración tan grande como la bala de un cartucho .22 Long Rifle, alrededor de 345 metros/segundo, lo
-                que equivale a <b>una fuerza de 1500 Newton.</b> </article>
-
+                que equivale a <b>una fuerza de 1500 Newton.</b>
+            </article>
+            <aside>
+                <figure><img class="fotos" src="../imagenes/gambamantis.PNG">
+                    <figcaption>
+                        La envidia de todo boxeador
+                    </figcaption>
+                </figure>
+            </aside>
+            <article> La gamba mantis es conocida como el one punch man del mundo animal,
+                un puñetazo suyo hace que el agua alrededor de su area de impacto llegue a la temperatura de la
+                superficie del sol</article>
             <footer>
-                <p>La gamba mantis es conocida como el one punch man del mundo animal, un puñetazo suyo hace que el agua alrededor de su area de impacto llegue a la temperatura de la superficie del sol
-                    primer puesto en la lista de animales interesantes.</p>
+                <video controls>
+                    <source src="../videos/gambamantisvideo.mp4" type="video/mp4">
+                </video>
             </footer>
         </section>
         <hr>
@@ -157,7 +168,10 @@
                 sus cerebros.</article>
 
             <footer>
-                <p></p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/d2VQeROVVAU?si=W_M4KyNeyF_5i58f"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </footer>
         </section>
         <hr>
@@ -189,18 +203,31 @@
             <header>
                 <h2 id="ornitorrinco">Ornitorrinco</h2>
             </header>
-            <article>El ornitorrinco es un animal único en su especie. Es un mamífero con características de reptil y ave, capaz de poner huevos y producir veneno. Este curioso animal se encuentra en Australia y ha desafiado la clasificación científica.</article>
+            <article>El ornitorrinco es un animal único en su especie. Es un mamífero con características de reptil y
+                ave, capaz de poner huevos y producir veneno. Este curioso animal se encuentra en Australia y ha
+                desafiado la clasificación científica.</article>
             <aside>
-                <figure><img class="fotos" src="../imagenes/ornitorrinco.jpg"></figure>
+                <figure><img class="fotos" src="../imagenes/ornitorrinco.jpg">
+                    <figcaption>El más famoso se llama Perry</figcaption>
+                </figure>
             </aside>
-            <article>El ornitorrinco tiene espolones venenosos en sus patas traseras, una característica rara entre los mamíferos. También cuenta con un sistema de detección electromagnética que le ayuda a cazar en el agua.</article>
+            <article>El ornitorrinco tiene espolones venenosos en sus patas traseras, una característica rara entre los
+                mamíferos. También cuenta con un sistema de detección electromagnética que le ayuda a cazar en el agua.
+            </article>
 
             <footer>
-                <p></p>
+                <p>Otra curiosidad del ornitorrinco es el sonido tan extraño que emite.</p>
+                <audio src="../audio/ornitorrinco.MP3" controls autoplay loop></audio>
             </footer>
         </section>
         <hr>
     </main>
+    <footer>
+        Hay muchos animales curiosos en este mundo, la elección se quedó en estos cuatro pero hay muchos más ejemplos
+        como el narval, el tardigrado, el pulpo mimético, el perezoso, el calamar gigante, etc.<br> Quería hacer una
+        mención honorifica a las arañas cazadoras gigantes y los solífugos, animales que no se veran en mis trabajos porque a
+        pesar de lo interesantes que son chocan con mi aracnofobia.
+    </footer>
 </body>
 
 </html>
