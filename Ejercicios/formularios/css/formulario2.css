@@ -1,0 +1,43 @@
+body {
+    margin: 100;
+    box-shadow: 1px 1px 15px rgb(161, 0, 108);
+    background-color: white;
+    border: 10px solid rgb(161, 0, 108);
+    margin-top: 100px;
+    margin-left: 600px;
+    margin-right: 200px;
+    width: 500px;
+  }
+
+  .formulariorosa {
+    display: block;
+    background-color: white;
+    padding: 20px;
+
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    resize: vertical;
+  }
+
+  .boton {
+    padding: 10px 20px;
+    background-color: rgb(222, 69, 236);
+    width: 100%;
+    color: white;
+  }
+  h1{
+    padding: 20px;
+    color: purple;
+  }
+  h3{
+    padding: 20px;
+  }
+  .asterisco{
+    color: red;
+  }

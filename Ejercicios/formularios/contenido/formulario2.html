@@ -7,69 +7,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Javier Juarez Canals">
   <title>formulario2</title>
-  <style>
-    body {
-      margin: 100;
-      box-shadow: 1px 1px 15px rgb(161, 0, 108);
-      background-color: white;
-      border: 10px solid rgb(161, 0, 108);
-    }
+  <link rel="stylesheet" href="../css/formulario2.css">
 
-    .formulariorosa {
-      display: block;
-      background-color: white;
-      padding: 20px;
-
-    }
-
-    input[type="text"],
-    input[type="email"],
-    textarea {
-      width: 100%;
-      padding: 5px;
-      box-sizing: border-box;
-      resize: vertical;
-    }
-
-    .boton {
-      padding: 10px 20px;
-      background-color: rgb(222, 69, 236);
-      width: 100%;
-      color: white;
-    }
-  </style>
-
-<body style=width:500px ; leftmargin="500" ; rightmargin="200" ; topmargin="100" ;>
+<body>
   </head>
-  <font color="purple">
-    <h1 style="padding: 20px;">Formulario de Contacto</h1>
-  </font>
+  <h1>Formulario de Contacto</h1>
+
   <div>
-    <h3 style="padding: 20px;">Escribenos y en breves nos pondremos en contacto contigo</h3>
+    <h3>Escribenos y en breves nos pondremos en contacto contigo</h3>
     <form class="formulariorosa" name="contacto" method="post">
       <label for="nombre">Nombre<span>
-          <font color="red">*</font>
+          <span class="asterisco">*</span>
         </span></label><br>
       <input type="text" name="nombre" placeholder="Introduzca su nombre"><br>
       <label for="email">email<span>
-          <font color="red">*</font>
+          <span class="asterisco">*</span>
         </span></label><br>
       <input type="text" name="email" placeholder="Introduzca su email"><br>
       <label for="Telefono">Telefono<span><br>
           <input type="text" name="Telefono" placeholder="Introduce tu teléfono"><br>
           <label for="sitioweb">Sitio web<span></span></label><br>
-              <input type="text" name="sitioweb" placeholder="Escribe la ULR de tu sitio web"><br>
-              <label for="Asunto">Asunto<span>
-                  <font color="red">*</font>
-                </span></label><br>
-              <input type="text" name="asunto" placeholder="Introduce tu asunto"><br>
-              <label for="mensaje">Mensaje:</label><br>
-              <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí" cols="40"
-                rows="10"></textarea><br><br>
-              <input class="boton" type="submit" value="Enviar">
-              <p>
-                <font color="purple">*</font>Los campos son obligatorios
-              </p><br>
+          <input type="text" name="sitioweb" placeholder="Escribe la ULR de tu sitio web"><br>
+          <label for="Asunto">Asunto<span>
+              <span class="asterisco">*</span>
+            </span></label><br>
+          <input type="text" name="asunto" placeholder="Introduce tu asunto"><br>
+          <label for="mensaje">Mensaje:</label><br>
+          <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí" cols="40"
+            rows="10"></textarea><br><br>
+          <input class="boton" type="submit" value="Enviar">
+          <p>
+            <span class="asterisco">*</span>Los campos son obligatorios
+          </p><br>
     </form>
     <!--no es perfecto pero queda practicamente igual, he probado mil funciones y al final he optado por dejarlo algo mas ancho que el original, el botón ha sido un dolor-->
   </div>
