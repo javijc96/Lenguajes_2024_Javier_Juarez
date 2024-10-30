@@ -38,3 +38,7 @@ th {
 .convalifondo {
     background: grey;
 }
+a {
+    color: green;
+    font-weight: bold;
+}

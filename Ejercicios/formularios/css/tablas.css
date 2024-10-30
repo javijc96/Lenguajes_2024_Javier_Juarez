@@ -1,0 +1,24 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    empty-cells: show;
+}
+
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    min-width: 100px;
+    height: 20px;
+}
+h1{
+    text-align: center;
+    background-color: green;
+    border-radius: 8px;
+    padding: 1em;
+    color: white;
+}
+a {
+    color: green;
+    font-weight: bold;
+}
