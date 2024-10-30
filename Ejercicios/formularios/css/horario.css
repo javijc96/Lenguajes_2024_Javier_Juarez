@@ -1,0 +1,40 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+h1{
+    text-align: center;
+}
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 52px;
+}
+
+th {
+    background: rgb(70, 156, 226);
+}
+
+.javifondo {
+    background: rgb(138, 189, 37);
+}
+
+.quiquefondo {
+    background: plum;
+}
+
+.aminfondo {
+    background: aquamarine;
+}
+
+.rafafondo {
+    background: rgb(255, 209, 122);
+}
+
+.convalifondo {
+    background: grey;
+}
