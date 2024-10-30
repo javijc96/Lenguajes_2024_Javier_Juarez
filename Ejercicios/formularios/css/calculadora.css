@@ -1,0 +1,22 @@
+table {
+    margin: 0 auto;
+    width: 40%;
+    border-style: double;
+    background-color:grey;
+    size: 60px;
+    border-radius: 8px;
+}
+
+th,
+td {
+    border: 1px solid black;
+    border-radius: 20px;
+    border-collapse: 50px;
+    padding: 30px;
+    background-color: white;
+}
+a {
+    padding: 20px;
+    color: green;
+    font-weight: bold;
+}
