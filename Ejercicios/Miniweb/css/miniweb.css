@@ -1,29 +1,61 @@
+/* Configuración general */
 body {
     background-color: whitesmoke;
     max-width: 1000px;
-    gap: 10px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 20px;
 }
 
+/* Encabezado principal */
 h1 {
     text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
 }
 
-header,
-footer {
+/* Encabezado y pie de página */
+header, footer {
     text-align: center;
-    background-color: #2e9937;
+    background-color: green;
     color: white;
     padding: 1em;
     width: 100%;
     border-radius: 8px;
+    margin-bottom: 20px;
 }
 
 footer {
+    font-size: 0.9em;
+    margin-top: 30px;
+}
+
+
+p {
+    margin: 10px 0;
+}
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
     text-align: center;
-    padding: 10px;
-    border-radius: 5px;
-    margin-top: 10px;
-    bottom: 0;
+    
+}
+
+li {
+    margin: 50px;
+    text-align: center;
+    list-style-type: none;
+
+}
+
+/* Estilos para enlaces */
+a {
+    text-align: center;
+    background-color: green;
+    color: white;
+    padding: 12px 24px;
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
 }
