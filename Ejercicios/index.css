@@ -1,6 +1,7 @@
+
 /* Configuración general */
 body {
-    background-color: whitesmoke;
+    background-color: rgb(200, 207, 214);
     max-width: 1000px;
     margin: 0 auto;
     padding: 20px;
@@ -27,6 +28,10 @@ header, footer {
 footer {
     font-size: 0.9em;
     margin-top: 30px;
+    position: fixed;
+    /* Fija el pie de página abajo */
+    bottom: 0;
+    max-width: 1000px;
 }
 
 

@@ -29,6 +29,10 @@ header, footer {
 footer {
     font-size: 0.9em;
     margin-top: 30px;
+    position: fixed;
+    /* Fija el pie de página abajo */
+    bottom: 0;
+    max-width: 1000px;
 }
 
 p {

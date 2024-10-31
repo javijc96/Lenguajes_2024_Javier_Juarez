@@ -7,23 +7,15 @@
     <title>archivo1</title>
     <link id="theme" rel="stylesheet"  type="text/css" href="../css/claro.css" />
     <script>
-        function cambiatema() {
-            var theme = document.getElementsByTagName('link')[0];
-            if (theme.getAttribute('href') == 'css/claro.css') {
-                theme.setAttribute('href', 'css/oscuro.css');
-                localStorage.setItem('tema', "css/oscuro.css");
-            } else {
-                theme.setAttribute('href', 'css/claro.css');
-                localStorage.setItem('tema', "css/claro.css");
-            }
-        }
-        function tema_activo() {
-            theme.setAttribute('href', localStorage.getItem("tema"));
+        function tema_activo(){
+        theme.setAttribute('href', '../'+ localStorage.getItem("tema"));
         }
     </script>
 </head>
 
-<body>
-    <a href= "../index.html">Enlace al index</a>
+<body onload="tema_activo()">
+    <header> Archivo 1</header>
+    <li><a href= "../index.html">Enlace al index</a></li>
+    <footer>Gracias por su atención</footer>
 </body>
 </html>
