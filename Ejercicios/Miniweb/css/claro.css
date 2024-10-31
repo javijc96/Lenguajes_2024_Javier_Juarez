@@ -1,7 +1,6 @@
 /* Configuración general */
 body {
-    background-color: #121212;
-    color: #e0e0e0;
+    background-color: whitesmoke;
     max-width: 1000px;
     margin: 0 auto;
     padding: 20px;
@@ -12,14 +11,13 @@ h1 {
     text-align: center;
     font-size: 2em;
     margin-bottom: 20px;
-    color: #ffffff;
 }
 
 /* Encabezado y pie de página */
 header, footer {
     text-align: center;
-    background-color: #1e7f5e;
-    color: #ffffff;
+    background-color: green;
+    color: white;
     padding: 1em;
     width: 100%;
     border-radius: 8px;
@@ -33,26 +31,29 @@ footer {
 
 p {
     margin: 10px 0;
-    color: #d0d0d0;
 }
 
-/* Lista sin viñetas */
+
 ul {
     list-style-type: none;
     padding: 0;
+    text-align: center;
+    
 }
 
 li {
-    margin-bottom: 10px;
+    margin: 50px;
+    text-align: center;
+    list-style-type: none;
 }
 
 /* Estilos para enlaces */
 a {
-    color: #66bb6a;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #81c784;
+    text-align: center;
+    background-color: green;
+    color: white;
+    padding: 12px 24px;
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
 }

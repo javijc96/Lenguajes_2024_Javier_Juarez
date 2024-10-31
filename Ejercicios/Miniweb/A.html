@@ -5,6 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Javier Juarez Canals">
     <title>A</title>
+    <link id="theme" rel="stylesheet"  type="text/css" href="css/claro.css" />
+    <script>
+        function cambiatema() {
+            var theme = document.getElementsByTagName('link')[0];
+            if (theme.getAttribute('href') == 'css/claro.css') {
+                theme.setAttribute('href', 'css/oscuro.css');
+                localStorage.setItem('tema', "css/oscuro.css");
+            } else {
+                theme.setAttribute('href', 'css/claro.css');
+                localStorage.setItem('tema', "css/claro.css");
+            }
+        }
+        function tema_activo() {
+            theme.setAttribute('href', localStorage.getItem("tema"));
+        }
+    </script>
 </head>
 <body>
     <a href="contenido/archivo3.html"> enlace al archivo3 </a>

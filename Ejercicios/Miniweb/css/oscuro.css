@@ -1,6 +1,7 @@
 /* Configuración general */
 body {
-    background-color: whitesmoke;
+    background-color: #121212;
+    color: whitesmoke;
     max-width: 1000px;
     margin: 0 auto;
     padding: 20px;
@@ -11,6 +12,7 @@ h1 {
     text-align: center;
     font-size: 2em;
     margin-bottom: 20px;
+    color: white;
 }
 
 /* Encabezado y pie de página */
@@ -29,24 +31,22 @@ footer {
     margin-top: 30px;
 }
 
-
 p {
     margin: 10px 0;
+    color: #d0d0d0;
 }
 
-
+/* Lista sin viñetas */
 ul {
     list-style-type: none;
     padding: 0;
     text-align: center;
-    
 }
 
 li {
     margin: 50px;
     text-align: center;
     list-style-type: none;
-
 }
 
 /* Estilos para enlaces */
