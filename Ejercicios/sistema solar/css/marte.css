@@ -1,4 +1,9 @@
-
+@font-face {
+    font-family: 'Gotham-Black';
+    src: url('../../fuente/Gotham-Black.otf') format('truetype'); /* Cambia la ruta según la ubicación de tu archivo */
+    font-weight: normal;
+    font-style: normal;
+}
 /* fondo de estrellas */
 .fondo {
     background-image: url("../imagenes/fondopamarte2.PNG");
@@ -17,6 +22,7 @@ body, h1, p, a, blockquote {
     color: white;
 }
 body {
+    font-family: 'Gotham-Black';
     max-width: 1000px;
     margin: 100px auto; 
     padding: 0 20px;

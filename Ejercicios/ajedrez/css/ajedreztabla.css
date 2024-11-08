@@ -1,0 +1,32 @@
+
+/* Configuración general */
+
+@font-face {
+    font-family: 'Gotham-Black';
+    src: url('../../fuente/Gotham-Black.otf') format('truetype'); /* Cambia la ruta según la ubicación de tu archivo */
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+table {
+    height: 1000px;
+    width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+
+.black {
+    background-color: black;
+}
+
+.white {
+    background-color: white;
+}

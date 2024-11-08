@@ -1,4 +1,11 @@
+@font-face {
+  font-family: 'Gotham-Black';
+  src: url('../../fuente/Gotham-Black.otf') format('truetype'); /* Cambia la ruta según la ubicación de tu archivo */
+  font-weight: normal;
+  font-style: normal;
+}
 body {
+    font-family: 'Gotham-Black';
     margin: 100;
     box-shadow: 1px 1px 15px rgb(161, 0, 108);
     background-color: white;

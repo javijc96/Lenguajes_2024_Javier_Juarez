@@ -1,10 +1,12 @@
+
+/* Configuración general */
+
 @font-face {
     font-family: 'Gotham-Black';
     src: url('../../fuente/Gotham-Black.otf') format('truetype'); /* Cambia la ruta según la ubicación de tu archivo */
     font-weight: normal;
     font-style: normal;
 }
-/* Configuración general */
 body {
     font-family: 'Gotham-Black';
     background-color: rgb(200, 207, 214);
