@@ -12,7 +12,12 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+body, html {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
 table {
@@ -24,9 +29,23 @@ table {
 
 
 .black {
+    height: 100px;
+    width: 100px;
+    position: relative;
+    box-sizing: border-box;
     background-color: black;
+    color:white;
+    font-size: 50px;
+    text-align: center;
 }
 
 .white {
+    height: 100px;
+    width: 100px;
+    position: relative;
+    box-sizing: border-box;
     background-color: white;
+    color:black;
+    font-size: 50px;
+    text-align: center;
 }
