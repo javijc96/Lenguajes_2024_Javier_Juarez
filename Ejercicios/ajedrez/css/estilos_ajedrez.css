@@ -18,13 +18,24 @@ body, html {
     justify-content: center;
     align-items: center;
 }
-
+header{
+    text-align: center;
+    background-color: green;
+    color: white;
+    padding: 1em;
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    position: fixed;
+    top: 0%;
+}
 
 table {
     height: 1000px;
     width: 1000px;
     position: relative;
     margin: auto;
+    border:1px solid black;
 }
 
 
