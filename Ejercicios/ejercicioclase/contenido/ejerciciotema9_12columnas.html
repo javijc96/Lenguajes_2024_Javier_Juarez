@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Javier Juarez Canals">
+    <title>12columnas</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        /*
+        .mitad {
+            grid-area: mitad;
+        }
+
+        .tercio {
+            grid-area: tercio;
+        }
+
+        .cuarto {
+            grid-area: cuarto;
+        }
+
+        .sexto {
+            grid-area: sexto;
+        }
+        .uno{
+            grid-area: uno;
+        }
+*/
+        .mitad1 {
+            grid-column: 1 / span 6;
+            grid-row: 1;
+        }
+
+        .mitad1 {
+            grid-column: 7 / span 6;
+            grid-row: 1;
+        }
+
+        .tercio1 {
+            grid-column: 1/ span 4;
+            grid-row: 2 ;
+        }
+        .tercio2 {
+            grid-column: 5/ span 4;
+            grid-row: 2 ;
+        }
+        .tercio3 {
+            grid-column: 9/ span 4;
+            grid-row: 2 ;
+        }
+        .cuarto1 {
+            grid-column: 3 / span 3;
+            grid-row: 1;
+        }
+        .cuarto2 {
+            grid-column: 3 / span 3;
+            grid-row: 4;
+        }
+        .cuarto3 {
+            grid-column: 3 / span 3;
+            grid-row: 7;
+        }
+        .cuarto4 {
+            grid-column: 3 ;
+            grid-row: 10/ span 3;
+        }
+
+
+        /*meter una nueva celda*/
+        .item5 {
+            grid-column: 1 / span 2;
+            grid-row: 3;
+        }
+
+        .item6 {
+            grid-column: 1;
+            grid-row: 4;
+        }
+        .grid-container {
+            display: grid;
+            gap: 10px;
+            gap: 1vh;
+            background-color: #133a5a;
+            padding: 1px;
+            max-width: 1200px;
+            margin: auto;
+
+        }
+
+        /*
+        .grid-container {
+            display: grid;
+            grid-template-columns: 6% 6% 6% 6% 6% 6% 6% 6% 6% 6% 6% 6%;
+            grid-template-areas:
+                'mitad mitad mitad mitad mitad mitad mitad mitad mitad mitad mitad mitad'
+                'tercio tercio tercio tercio tercio tercio tercio tercio tercio tercio tercio'
+                'cuarto cuarto cuarto cuarto cuarto cuarto cuarto cuarto cuarto cuarto cuarto'
+                'sexto sexto sexto sexto sexto sexto sexto sexto sexto sexto sexto sexto'
+                'sexto sexto sexto sexto sexto sexto sexto sexto sexto sexto sexto sexto'
+                'sexto sexto sexto sexto sexto sexto sexto sexto sexto sexto sexto sexto'
+                'uno uno uno uno uno uno uno uno uno uno uno uno';
+                grid-template-rows:auto auto auto;
+            gap: 1vh;
+            /*separacion entre los elementos
+            background-color: #133a5a;
+            padding: 1px;
+            /*jugando con las alturas de las fila se peude tener bastante control de la visualización)
+
+        }
+        */
+        .grid-container>div {
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            padding: 20px 0;
+            font-size: 2em;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="grid-container">
+
+        <div class="mitad1">mitad</div>
+        <div class="mitad2">mitad</div>
+
+        <div class="tercio1">tercio</div>
+        <div class="tercio2">tercio</div>
+        <div class="tercio3">tercio</div>
+
+        <div class="cuarto1">cuarto</div>
+        <div class="cuarto2">cuarto</div>
+        <div class="cuarto3">cuarto</div>
+        <div class="cuarto4">cuarto</div>
+
+        <div class="sexto1">sexto</div>
+        <div class="sexto2">sexto</div>
+        <div class="sexto3">sexto</div>
+        <div class="sexto4">sexto</div>
+        <div class="sexto5">sexto</div>
+        <div class="sexto6">sexto</div>
+        <div class="uno"></div>
+    </div>
+
+</body>
+
+</html>
