@@ -36,34 +36,24 @@ table {
     height: 800px;
     width: 800px;
     position: relative;
-    margin: auto;
+    margin: 0 auto;
     border:1px solid black;
+    border-collapse: collapse;
 }
 
-img{
+.fondonegro, .fondoblanco {
     width: 100px;
     height: 100px;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
 }
 
-td{
-    width: 100px;
-    height: 100px;
-}
 .fondonegro {
     background-image: url('../imagenes/fondonegro.png');
-    height: 100px;
-    width: 100px;
-    position: relative;
-    box-sizing: border-box;
-    text-align: center;
 }
 
 .fondoblanco {
     background-image: url('../imagenes/fondoblanco.png');
-    height: 100px;
-    width: 100px;
-    position: relative;
-    box-sizing: border-box;
-    font-size: 50px;
-    text-align: center;
 }
