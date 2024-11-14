@@ -1,0 +1,11 @@
+.tablero {
+    width: 320px; /* Ancho total del tablero, ajustable */
+    height: 320px;
+    border: 2px solid black;
+    overflow: hidden; 
+}
+.casilla {
+    width: 40px; /* Cada casilla es 1/8 del tablero, ajustable */
+    height: 40px;
+    float: left;
+}
