@@ -20,6 +20,20 @@ body, html {
     align-items: center;
     font-size: 50px;
 }
+footer {
+    text-align: center;
+    background-color: green;
+    color: white;
+    padding: 1em;
+    width: 100%;
+    border-radius: 8px;
+    font-size: 0.9em;
+    margin-top: 30px;
+    position: fixed;
+    /* Fija el pie de página abajo */
+    bottom: 0;
+    max-width: 1000px;
+}
 header{
     text-align: center;
     background-color: green;
@@ -30,7 +44,9 @@ header{
     margin-bottom: 20px;
     position: fixed;
     top: 0%;
+    max-width: 1000px;
 }
+
 
 table {
     height: 800px;

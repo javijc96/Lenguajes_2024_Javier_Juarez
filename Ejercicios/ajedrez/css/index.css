@@ -24,6 +24,7 @@ h1 {
 
 /* Encabezado y pie de página */
 header, footer {
+    max-width: 1000px;
     text-align: center;
     background-color: green;
     color: white;
@@ -34,12 +35,9 @@ header, footer {
 }
 
 footer {
-    font-size: 0.9em;
-    margin-top: 30px;
     position: fixed;
     /* Fija el pie de página abajo */
     bottom: 0;
-    max-width: 1000px;
 }
 
 
