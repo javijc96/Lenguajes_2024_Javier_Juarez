@@ -1,0 +1,68 @@
+@font-face {
+    font-family: 'Gotham-Black';
+    src: url('../../fuente/Gotham-Black.otf') format('truetype'); /* Cambia la ruta según la ubicación de tu archivo */
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, html {
+    margin-top: 10px;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
+footer {
+    text-align: center;
+    background-color: green;
+    color: white;
+    padding: 1em;
+    width: 100%;
+    border-radius: 8px;
+    font-size: 0.9em;
+    margin-top: 30px;
+    margin-left: 25%;
+    /* Fija el pie de página abajo */
+    bottom: 0;
+    max-width: 1000px;
+}
+header{
+    text-align: center;
+    background-color: green;
+    color: white;
+    padding: 1em;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    top: 0%;
+    max-width: 1000px;
+    margin-left: 25%;
+    padding-top: 0;
+}
+.tablero{
+    grid-template-columns: auto auto auto auto auto auto auto auto;
+    display: grid;
+    margin-left: 30%;
+    height: 800px;
+    width: 800px;
+    border: 1px solid black;
+    border-collapse: collapse;
+
+}
+.casilla{
+    width: 100px;
+    height: 100px;
+    font-size: 30px;
+    align-items: center;
+    background-size: cover;}
+.fondonegro {
+    background-image: url('../imagenes/fondonegro.png');
+}
+
+.fondoblanco {
+    background-image: url('../imagenes/fondoblanco.png');
+}
+
