@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'Gotham-Black';
+    src: url('../../fuente/Gotham-Black.otf') format('truetype'); /* Cambia la ruta según la ubicación de tu archivo */
+    font-weight: normal;
+    font-style: normal;
+}
+* {height: 99%;}
+div.azul {
+    background-color: blue;
+    width: 50%;
+    height: 50%;
+    float: left;
+}
+div.rojo {
+    background-color: red;
+    width: 50%;
+    height: 50%;
+    float: right;
+}
+div.verde {
+    background-color: green;
+    width: 50%;
+    height: 50%;
+    clear: both;
+    float: left;
+}
+div.amarillo {
+    background-color: yellow;
+    width: 50%;
+    height: 50%;
+    float: right;
+}
