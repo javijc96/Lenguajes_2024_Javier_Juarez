@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 body, html {
-    margin-top: 10px;
     justify-content: center;
     align-items: center;
     font-size: 50px;
@@ -36,7 +35,9 @@ header{
     margin-left: 30%;
     padding-top: 0;
 } 
-
+a{
+    color: white;
+}
 
 .tablero {
     margin-left: 34%;

@@ -10,7 +10,6 @@
     box-sizing: border-box;
 }
 body, html {
-    margin-top: 10px;
     height: 100vh;
     justify-content: center;
     align-items: center;
@@ -29,6 +28,9 @@ footer {
     /* Fija el pie de página abajo */
     bottom: 0;
     max-width: 1000px;
+}
+a{
+    color: white;
 }
 header{
     text-align: center;

@@ -13,48 +13,46 @@
     box-sizing: border-box;
 }
 body, html {
-    margin-top: 10px;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-size: 50px;
 }
 footer {
     text-align: center;
     background-color: green;
     color: white;
-    padding: 1em;
     width: 100%;
     border-radius: 8px;
     font-size: 0.9em;
-    margin-top: 30px;
-    position: fixed;
+    margin-left: 25%;
     /* Fija el pie de página abajo */
     bottom: 0;
     max-width: 1000px;
 }
 header{
+    margin-top: 0px;
     text-align: center;
     background-color: green;
     color: white;
     padding: 1em;
-    width: 100%;
     border-radius: 8px;
     margin-bottom: 20px;
-    position: fixed;
     top: 0%;
     max-width: 1000px;
+    margin-left: 25%;
+    padding-top: 0;
 }
-
 
 table {
     height: 800px;
     width: 800px;
-    position: relative;
-    margin: 0 auto;
-    border:1px solid black;
+
+    margin: 12px auto 80px; 
+        border:1px solid black;
     border-collapse: collapse;
+ 
+}
+
+a{
+    color: white;
 }
 
 .fondonegro, .fondoblanco {

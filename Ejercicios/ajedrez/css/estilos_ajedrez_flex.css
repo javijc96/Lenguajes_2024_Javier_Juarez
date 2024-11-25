@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 body, html {
-    margin-top: 10px;
     justify-content: center;
     align-items: center;
     font-size: 50px;
@@ -20,7 +19,7 @@ footer {
     border-radius: 8px;
     font-size: 0.9em;
     margin-top: 30px;
-    margin-left: 30%;
+    margin-left: 25%;
     /* Fija el pie de página abajo */
     bottom: 0;
     max-width: 1000px;
@@ -34,9 +33,12 @@ header{
     margin-bottom: 20px;
     top: 0%;
     max-width: 1000px;
-    margin-left: 30%;
+    margin-left: 25%;
     padding-top: 0;
 } 
+a{
+    color: white;
+}
 
 .fila{
     display: flex;

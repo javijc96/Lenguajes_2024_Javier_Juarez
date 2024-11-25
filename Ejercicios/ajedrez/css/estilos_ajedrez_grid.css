@@ -10,7 +10,6 @@
     box-sizing: border-box;
 }
 body, html {
-    margin-top: 10px;
     height: 100vh;
     justify-content: center;
     align-items: center;
@@ -31,6 +30,7 @@ footer {
     max-width: 1000px;
 }
 header{
+    margin-top: 0px;
     text-align: center;
     background-color: green;
     color: white;
@@ -41,6 +41,9 @@ header{
     max-width: 1000px;
     margin-left: 25%;
     padding-top: 0;
+}
+a{
+    color: white;
 }
 .tablero{
     grid-template-columns: auto auto auto auto auto auto auto auto;
