@@ -13,6 +13,25 @@
         body {
             text-align: center;
         }
+        header, footer {
+    text-align: center;
+    background-color: green;
+    color: white;
+    padding: 1em;
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+footer {
+    font-size: 0.9em;
+    margin-top: 30px;
+    /* Fija el pie de página abajo */
+}
+a{
+    color: white;
+}
+
         .tablero{
             width: 800px;
             height: 800px;
@@ -46,7 +65,7 @@
 
 
 <body>
-<h1>Diseño flex</h1>
+<header><h1>Diseño flex</h1></header>
 
 <div class="tablero">
     <div class="fila">
@@ -77,6 +96,7 @@
     </div>
 </div>
 
+<footer class="index"> <a href="../index.html">Vuelta al index de los ejercicios de clase</a></footer>
 </body>
 
 </html>

@@ -4,36 +4,29 @@
     font-weight: normal;
     font-style: normal;
 }
-* {height: 99%;
+* {
+    height: 100%;
 }
-
-
 div.azul {
     background-color: blue;
-    width: 50%;
-    height: 50%;
-    float: left;
+    width: 100%;
+    height: 20%;
 }
 div.rojo {
     background-color: red;
     width: 50%;
-    height: 50%;
-    float: right;
+    height: 60%;
+    float: left;
 }
 div.verde {
     background-color: green;
     width: 50%;
-    height: 50%;
-    clear: both;
-    float: left;
+    height: 60%;
+    float: right;
 }
 div.amarillo {
     background-color: yellow;
-    width: 50%;
-    height: 50%;
-    float: right;
-}
-a{
-    color: green;
-    
+    width: 100%;
+    height: 20%;
+    clear: both;
 }

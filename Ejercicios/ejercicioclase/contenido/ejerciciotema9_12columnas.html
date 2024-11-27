@@ -6,75 +6,121 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Javier Juarez Canals">
+
     <title>12columnas</title>
     <style>
+        @font-face {
+            font-family: 'Gotham-Black';
+            src: url('../../fuente/Gotham-Black.otf') format('truetype');
+            /* Cambia la ruta según la ubicación de tu archivo */
+            font-weight: normal;
+            font-style: normal;
+        }
+
         * {
             box-sizing: border-box;
         }
+
+        header,
+        footer {
+            text-align: center;
+            background-color: green;
+            color: white;
+            padding: 1em;
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+        }
+
+        a {
+            color: white;
+        }
+
         .mitad1 {
             grid-column: 1 / span 6;
             grid-row: 1;
         }
+
         .mitad2 {
             grid-column: 7 / span 6;
             grid-row: 1;
         }
+
         .tercio1 {
             grid-column: 1/ span 4;
             grid-row: 2;
         }
+
         .tercio2 {
             grid-column: 5/ span 4;
             grid-row: 2;
         }
+
         .tercio3 {
             grid-column: 9/ span 4;
             grid-row: 2;
         }
+
         .cuarto1 {
             grid-column: 1 / span 3;
             grid-row: 3;
         }
+
         .cuarto2 {
             grid-column: 4 / span 3;
             grid-row: 3;
         }
+
         .cuarto3 {
             grid-column: 7 / span 3;
             grid-row: 3;
         }
+
         .cuarto4 {
             grid-column: 10 / span 3;
             grid-row: 3;
         }
+
         .sexto1 {
             grid-column: 1/span 2;
             grid-row: 4;
         }
+
         .sexto2 {
             grid-column: 3/span 2;
             grid-row: 4;
         }
+
         .sexto3 {
             grid-column: 5/span 2;
             grid-row: 4;
         }
+
         .sexto4 {
             grid-column: 7/span 2;
             grid-row: 4;
         }
+
         .sexto5 {
             grid-column: 9/span 2;
             grid-row: 4;
         }
+
         .sexto6 {
             grid-column: 11/span 2;
             grid-row: 4;
         }
+
         .sextofila5_1 {
             grid-column: 3 /span 2;
             grid-row: 5;
         }
+
         .sextofila5_2 {
             grid-column: 6 /span 2;
             grid-row: 5;
@@ -89,60 +135,73 @@
             grid-column: 2 /span 2;
             grid-row: 6;
         }
+
         .sextofila6_2 {
             grid-column: 10 /span 2;
             grid-row: 6;
         }
-        .terciofila6{
+
+        .terciofila6 {
             grid-column: 5/span 4;
             grid-row: 6;
         }
 
-        .doceavo1{
+        .doceavo1 {
             grid-column: 1/span 1;
             grid-row: 7;
         }
-        .doceavo2{
+
+        .doceavo2 {
             grid-column: 2/span 1;
             grid-row: 7;
         }
-        .doceavo3{
+
+        .doceavo3 {
             grid-column: 3/span 1;
             grid-row: 7;
         }
-        .doceavo4{
+
+        .doceavo4 {
             grid-column: 4/span 1;
             grid-row: 7;
         }
-        .doceavo5{
+
+        .doceavo5 {
             grid-column: 5/span 1;
             grid-row: 7;
         }
-        .doceavo6{
+
+        .doceavo6 {
             grid-column: 6/span 1;
             grid-row: 7;
         }
-        .doceavo7{
+
+        .doceavo7 {
             grid-column: 7/span 1;
             grid-row: 7;
         }
-        .doceavo8{
+
+        .doceavo8 {
             grid-column: 8/span 1;
             grid-row: 7;
         }
-        .doceavo9{
+
+        .doceavo9 {
             grid-column: 9/span 1;
             grid-row: 7;
         }
-        .doceavo10{
+
+        .doceavo10 {
             grid-column: 10/span 1;
             grid-row: 7;
         }
-        .doceavo11{
+
+        .doceavo11 {
             grid-column: 11/span 1;
             grid-row: 7;
-        }   
-        .doceavo12{
+        }
+
+        .doceavo12 {
             grid-column: 12/span 1;
             grid-row: 7;
         }
@@ -168,6 +227,9 @@
 </head>
 
 <body>
+    <header>
+        Ejercicio de 12 columnas
+    </header>
 
     <div class="grid-container">
 
@@ -208,12 +270,13 @@
         <div class="doceavo8"></div>
         <div class="doceavo9"></div>
         <div class="doceavo10"></div>
-        <div class="doceavo11"></div>        
+        <div class="doceavo11"></div>
         <div class="doceavo12"></div>
 
 
     </div>
 
+    <footer class="index"> <a href="../index.html">Vuelta al index de los ejercicios de clase</a></footer>
 </body>
 
 </html>

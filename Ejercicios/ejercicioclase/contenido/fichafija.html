@@ -10,6 +10,28 @@
         body {
             text-align: center;
         }
+        header, footer {
+    text-align: center;
+    background-color: green;
+    color: white;
+    padding: 1em;
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+footer {
+    font-size: 0.9em;
+    margin-top: 30px;
+    position: fixed;
+    /* Fija el pie de página abajo */
+    bottom: 0;
+
+}
+a{
+    color: white;
+}
+
         .tablero{
             width: 400px;
             height: 400px;
@@ -48,7 +70,7 @@
 
 
 <body>
-<hi>Diseño fijo</hi>
+<header><hi>Diseño fijo</hi></header>
 
 <div class="tablero">
 <div class="casilla blanca fila1 columna1"></div>
@@ -57,6 +79,7 @@
 <div class="casilla negro fila2 columa1"></div>
 </div>
 
+<footer class="index"> <a href="../index.html">Vuelta al index de los ejercicios de clase</a></footer>
 </body>
 
 </html>
