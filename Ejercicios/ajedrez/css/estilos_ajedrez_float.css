@@ -18,7 +18,7 @@ footer {
     border-radius: 8px;
     font-size: 0.9em;
     margin-top: 30px;
-    margin-left: 30%;
+    margin-left: 25%;
     /* Fija el pie de página abajo */
     bottom: 0;
     max-width: 1000px;
@@ -32,7 +32,7 @@ header{
     margin-bottom: 20px;
     top: 0%;
     max-width: 1000px;
-    margin-left: 30%;
+    margin-left: 25%;
     padding-top: 0;
 } 
 a{
@@ -40,8 +40,8 @@ a{
 }
 
 .tablero {
-    margin-left: 34%;
-    width: 803px;
+    margin-left: 30%;
+    width: 800px;
     height: 800px;
     border: 2px solid black;
     overflow: hidden;   
@@ -49,7 +49,7 @@ a{
 
 .casilla {
     float: left;
-    width: 100px; /* Cada casilla es 1/8 del tablero, ajustable */
+    width: 99px; /* Cada casilla es 1/8 del tablero, ajustable */
     height: 100px;
 }
 

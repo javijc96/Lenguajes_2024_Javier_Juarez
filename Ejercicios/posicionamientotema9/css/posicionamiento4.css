@@ -4,8 +4,9 @@
     font-weight: normal;
     font-style: normal;
 }
-* {height: 99%;}
+* {height: 100%;}
 h1{
+    margin: 0%;
     font-size: 150px ;
     text-align: justify;
 }
