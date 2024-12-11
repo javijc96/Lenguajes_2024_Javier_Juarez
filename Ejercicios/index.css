@@ -40,6 +40,7 @@ footer {
     /* Fija el pie de página abajo */
     bottom: 0;
     max-width: 1000px;
+    min-height: 20px;
 }
 
 ul {
@@ -57,7 +58,7 @@ a {
     border-radius: 8px;
 }
 
-.contenido{
+.contenido{ /*sacado de las etiquetas del trabajo grupal para hacer como las etiquetas de las banderas*/
     max-width: 1200px;
     margin: 2rem auto;
     display: grid;
