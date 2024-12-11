@@ -1,56 +1,89 @@
 @font-face {
     font-family: 'Gotham-Black';
-    src: url('../../fuente/Gotham-Black.otf') format('truetype'); /* Cambia la ruta según la ubicación de tu archivo */
+    src: url('../../fuente/Gotham-Black.otf') format('truetype');
+    /* Cambia la ruta según la ubicación de tu archivo */
     font-weight: normal;
     font-style: normal;
 }
-* {height: 100%;}
 
-h1{
-    font-size: 150px ;
-    text-align: justify;
+* {
+    height: 100%;
+    box-sizing: border-box;
+    margin: 0%;
 }
+
+body {
+    min-height: 100vh;
+}
+a{
+    text-decoration: none;
+    color: green;
+}
+h1 {
+    font-size: 33px;
+    text-align: justify;
+    padding: 20px;
+}
+
 div.azul {
     background-color: blue;
     width: 100%;
     height: 20%;
+
 }
-div.gris{
+
+div.gris {
     background-color: gray;
     width: 100%;
     height: 10%;
+    position: sticky;
+    top: 20%;
 }
+
 div.rojo {
     background-color: red;
     width: 20%;
     height: 70%;
     float: left;
 }
+
 div.verde {
     background-color: green;
     width: 40%;
     height: 70%;
     float: left;
 }
+
 div.amarillo {
     background-color: yellow;
     width: 40%;
     height: 70%;
     float: left;
 }
-div.morado {
-    background-color: purple;
-    width: 100px;
-    height: 100px;
-    position: sticky;
-    top: 10px; /* Se "pega" a 10px del borde superior de su contenedor */
-    margin: auto; /* Centrado */
+
+div.naranja {
+    background-color: orange;
+    width: 100%;
+    height: 1500px;/*le puse mucho tamaño para que se viera bien el sticky del div gris*/
 }
 
-.boton{
-    position: absolute;
+div.morado {
+    background-color: purple;
+    width: 100px; 
+    height: 100px; 
+    position: fixed; /* Cambiado de float a fixed */
+    top: 80%; 
+    left: 80%; 
+    transform: translate(-50%, -50%);/*asegura centrado*/
+}
+
+.boton {
+    position: fixed;
     bottom: 10px;
     right: 10px;
+    width: 50px;
+    height: 50px;
     background-color: lightgray;
     border: 1px solid #333;
-    border-radius: 5px;}
+    border-radius: 10%;
+}
