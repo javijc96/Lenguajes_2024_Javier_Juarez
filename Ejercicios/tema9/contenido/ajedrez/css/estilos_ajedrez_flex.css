@@ -9,6 +9,7 @@ body, html {
     font-size: 50px;
     min-height: 100vh; /* Asegura que el body ocupe toda la altura de la ventana */
 }
+
 footer {
     text-align: center;
     background-color: green;
@@ -34,22 +35,35 @@ header{
     max-width: 1000px;
     margin-left: 25%;
     padding-top: 0;
+    z-index: 2; /*z-index para que el header sticky vaya por encima del ajedrez*/
+    position: sticky;
+
+
 } 
 a{
     color: white;
 }
 
+.fila{
+    display: flex;
+    flex-direction: row;
+}
 .tablero {
-    margin-left: 30%;
+    margin-left: 25%;
     width: 800px;
     height: 800px;
-    border: 2px solid black;
     overflow: hidden;   
+    border:1px solid black;
+    position: relative;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+
 }
 
 .casilla {
-    float: left;
-    width: 99px; /* Cada casilla es 1/8 del tablero, ajustable */
+    width: 100px; /* Cada casilla es 1/8 del tablero, ajustable */
     height: 100px;
 }
 
@@ -61,7 +75,4 @@ a{
 .fondonegro {
     background-image: url(../imagenes/fondonegro.png);
     background-size: cover;
-}
-.salto{
-    clear: left;
 }
