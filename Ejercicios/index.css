@@ -42,23 +42,10 @@ footer {
     max-width: 1000px;
 }
 
-
-p {
-    margin: 10px 0;
-}
-
-
 ul {
-    list-style-type: none;
     padding: 0;
     text-align: center;
     
-}
-
-li {
-    margin: 50px;
-    text-align: center;
-    list-style-type: none;
 }
 
 /* Estilos para enlaces */
@@ -66,8 +53,26 @@ a {
     text-align: center;
     background-color: green;
     color: white;
-    padding: 12px 24px;
-    width: 100%;
+    padding: 24px;
     border-radius: 8px;
-    margin-bottom: 20px;
+}
+
+.contenido{
+    max-width: 1200px;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+.apartado{
+    justify-items: center ;
+    display: flex;
+    max-width: 70%;
+    margin: auto;
+    gap: 1rem;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.1);
 }
