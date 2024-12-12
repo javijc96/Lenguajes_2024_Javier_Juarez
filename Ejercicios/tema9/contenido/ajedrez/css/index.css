@@ -40,33 +40,34 @@ footer {
     bottom: 0;
 }
 
-
-p {
-    margin: 10px 0;
-}
-
-
-ul {
-    list-style-type: none;
-    padding: 0;
-    text-align: center;
-    
-}
-
-li {
-    margin: 50px;
-    text-align: center;
-    list-style-type: none;
-
-}
-
 /* Estilos para enlaces */
 a {
     text-align: center;
-    background-color: green;
     color: white;
-    padding: 12px 24px;
-    width: 100%;
-    border-radius: 8px;
-    margin-bottom: 20px;
 }
+
+.contenido{ /*sacado de las etiquetas del trabajo grupal para hacer como las etiquetas de las banderas*/
+    max-width: 1200px;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+.apartado{
+    justify-items: center ;
+    display: flex;
+    max-width: 70%;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: green;
+    border-radius: 8px;
+    border: 15px solid white;
+    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease, box-shadow 0.5s ease; /* cambia mas lento el tamaño del apartado */
+
+}
+.apartado:hover {
+    transform: translateY(-10px);
+    box-shadow: 6px 6px 16px rgba(0, 0, 0, 0.2);
+}
+
