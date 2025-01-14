@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE tarjeta_credito SYSTEM "../cssydtd/Ej5Tarjetacredito.dtd">
+
+<tarjeta_credito>
+    <numero>1234-5678-9012-3456</numero>
+    <titular>María López García</titular>
+    <fecha_vencimiento>2025-10</fecha_vencimiento>
+    <tipo>VISA</tipo>
+    <entidad_emisora>Banco Santander</entidad_emisora>
+</tarjeta_credito>

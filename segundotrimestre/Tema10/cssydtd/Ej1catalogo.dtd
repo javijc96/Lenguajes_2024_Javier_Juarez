@@ -1,0 +1,6 @@
+    <!ELEMENT Ej1catalogo (libro+)>
+    <!ELEMENT libro (titulo, autor+, anio, genero+)>
+    <!ELEMENT titulo (#PCDATA)>
+    <!ELEMENT autor (#PCDATA)>
+    <!ELEMENT anio (#PCDATA)>
+    <!ELEMENT genero (#PCDATA)>

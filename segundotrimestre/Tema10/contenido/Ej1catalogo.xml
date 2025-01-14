@@ -1,12 +1,6 @@
-<?xml version="1.1" encoding="UTF-8" standalone="yes"?>
-<!DOCTYPE Ej1catalogo [
-    <!ELEMENT Ej1catalogo (libro+)>
-    <!ELEMENT libro (titulo, autor+, anio, genero+)>
-    <!ELEMENT titulo (#PCDATA)>
-    <!ELEMENT autor (#PCDATA)>
-    <!ELEMENT anio (#PCDATA)>
-    <!ELEMENT genero (#PCDATA)>
-]>
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Ej1catalogo SYSTEM "../cssydtd/Ej1catalogo.dtd">
+
 <Ej1catalogo>
     <libro>
         <titulo>El principito</titulo>
@@ -31,5 +25,29 @@
         <autor>Miguel de Cervantes</autor>
         <anio>1605</anio>
         <genero>Aventura</genero>
+    </libro>
+        <libro>
+        <titulo>La sombra del viento</titulo>
+        <autor>Carlos Ruiz Zafón</autor>
+        <anio>2001</anio>
+        <genero>Misterio</genero>
+    </libro>
+    <libro>
+        <titulo>Orgullo y prejuicio</titulo>
+        <autor>Jane Austen</autor>
+        <anio>1813</anio>
+        <genero>Romance</genero>
+    </libro>
+    <libro>
+        <titulo>El Hobbit</titulo>
+        <autor>J.R.R. Tolkien</autor>
+        <anio>1937</anio>
+        <genero>Fantasía</genero>
+    </libro>
+    <libro>
+        <titulo>Crimen y castigo</titulo>
+        <autor>Fiódor Dostoyevski</autor>
+        <anio>1866</anio>
+        <genero>Filosofía</genero>
     </libro>
 </Ej1catalogo>

@@ -1,0 +1,44 @@
+<?xml version="1.1" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE Ej2contacto [
+    <!ELEMENT Ej2contacto (agenda)>
+    <!ELEMENT agenda (contacto+)>
+    <!ELEMENT contacto (nombre, telefono+, email, direccion)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT telefono (#PCDATA)>
+    <!ELEMENT email (#PCDATA)>
+    <!ELEMENT direccion (#PCDATA)>
+]>
+<Ej2contacto>
+    <agenda>
+        <contacto>
+            <nombre>Juan Pérez</nombre>
+            <telefono>123-456-7890</telefono>
+            <email>juan.perez@gmail.com</email>
+            <direccion>Calle La Pampa 123, Villarubia</direccion>
+        </contacto>
+        <contacto>
+            <nombre>María López</nombre>
+            <telefono>987-654-3210</telefono>
+            <email>maria.lopez@gmail.com</email>
+            <direccion>Avenida La Estrella 456, Ochavillo</direccion>
+        </contacto>
+        <contacto>
+            <nombre>Carlos García</nombre>
+            <telefono>555-555-5555</telefono>
+            <email>carlos.garcia@gmail.com</email>
+            <direccion>Callejón Diagón 789, Amstelveen</direccion>
+        </contacto>
+        <contacto>
+            <nombre>Ana Martínez</nombre>
+            <telefono>444-444-4444</telefono>
+            <email>ana.martinez@gmail.com</email>
+            <direccion>Plaza La Corredera 7, Cordoba</direccion>
+        </contacto>
+        <contacto>
+            <nombre>Luisa Fernández</nombre>
+            <telefono>333-333-3333</telefono>
+            <email>luisa.fernandez@gmail.com</email>
+            <direccion>Calle Barrionuevo 17, Cordoba</direccion>
+        </contacto>
+    </agenda>
+</Ej2contacto>

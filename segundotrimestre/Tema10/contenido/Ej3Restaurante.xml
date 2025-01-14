@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<!DOCTYPE menu [
+    <!ELEMENT menu (categoria+)>
+    <!ELEMENT categoria (nombre, item+)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT item (nombre, descripcion, precio)>
+    <!ELEMENT descripcion (#PCDATA)>
+    <!ELEMENT precio (#PCDATA)>
+]>
+<menu>
+    <categoria>
+        <nombre>Entrantes</nombre>
+        <item>
+            <nombre>Ensalada César</nombre>
+            <descripcion>Lechuga romana, crutones y aderezo César con queso parmesano.</descripcion>
+            <precio>7.50</precio>
+        </item>
+        <item>
+            <nombre>Sopa de Tomate</nombre>
+            <descripcion>Sopa casera de tomate con un toque de albahaca.</descripcion>
+            <precio>5.00</precio>
+        </item>
+    </categoria>
+    <categoria>
+        <nombre>Platos Principales</nombre>
+        <item>
+            <nombre>Pollo a la Parrilla</nombre>
+            <descripcion>Pechuga de pollo marinada con hierbas y acompañada de verduras.</descripcion>
+            <precio>12.00</precio>
+        </item>
+        <item>
+            <nombre>Salmón al Horno</nombre>
+            <descripcion>Salmón fresco al horno con salsa de limón y eneldo.</descripcion>
+            <precio>15.00</precio>
+        </item>
+        <item>
+            <nombre>Pasta Alfredo</nombre>
+            <descripcion>Pasta al dente con cremosa salsa Alfredo y queso parmesano.</descripcion>
+            <precio>10.50</precio>
+        </item>
+    </categoria>
+    <categoria>
+        <nombre>Postres</nombre>
+        <item>
+            <nombre>Cheesecake</nombre>
+            <descripcion>Tarta de queso con base de galleta y mermelada de frutos rojos.</descripcion>
+            <precio>6.00</precio>
+        </item>
+        <item>
+            <nombre>Helado Artesanal</nombre>
+            <descripcion>Helado de vainilla o chocolate hecho en casa.</descripcion>
+            <precio>4.50</precio>
+        </item>
+    </categoria>
+</menu>
