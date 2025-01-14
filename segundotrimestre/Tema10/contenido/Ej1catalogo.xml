@@ -1,0 +1,35 @@
+<?xml version="1.1" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE Ej1catalogo [
+    <!ELEMENT Ej1catalogo (libro+)>
+    <!ELEMENT libro (titulo, autor+, anio, genero+)>
+    <!ELEMENT titulo (#PCDATA)>
+    <!ELEMENT autor (#PCDATA)>
+    <!ELEMENT anio (#PCDATA)>
+    <!ELEMENT genero (#PCDATA)>
+]>
+<Ej1catalogo>
+    <libro>
+        <titulo>El principito</titulo>
+        <autor>Antoine de Saint-Exupéry</autor>
+        <anio>1943</anio>
+        <genero>Ficción</genero>
+    </libro>
+    <libro>
+        <titulo>Cien años de soledad</titulo>
+        <autor>Gabriel García Márquez</autor>
+        <anio>1967</anio>
+        <genero>Realismo mágico</genero>
+    </libro>
+    <libro>
+        <titulo>1984</titulo>
+        <autor>George Orwell</autor>
+        <anio>1949</anio>
+        <genero>Distopía</genero>
+    </libro>
+    <libro>
+        <titulo>Don Quijote de la Mancha</titulo>
+        <autor>Miguel de Cervantes</autor>
+        <anio>1605</anio>
+        <genero>Aventura</genero>
+    </libro>
+</Ej1catalogo>

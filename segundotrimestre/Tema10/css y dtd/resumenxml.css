@@ -1,0 +1,159 @@
+@font-face {
+    font-family: 'Gotham';
+    /* Nombre que usarás en el CSS */
+    src: url('../../../fuente/GothamMedium_1.ttf') format('truetype');
+    /* Ruta relativa y formato */
+    font-weight: normal;
+    /* Puedes ajustar según las variantes de la fuente */
+    font-style: normal;
+}
+
+body {
+    font-family: 'Gotham';
+    background-color: #DCD0FF;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Encabezado y pie de página */
+header,
+footer {
+    background-color: #f2eefd;
+    text-align: center;
+    padding: 1.5em;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgb(63, 1, 63);
+}
+
+footer {
+    bottom: 0;
+}
+
+h1,
+h2 {
+    color: blueviolet;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    /*todo en mayusculas*/
+    letter-spacing: 2px;
+    /*espacio entre letras, mas legible*/
+}
+
+h2 {
+    font-size: large;
+    width: 50%;
+    height: 30%;
+    position: relative;
+}
+
+h3 {
+    color: blueviolet;
+}
+
+section {
+    background-color: #F5FFFA;
+    /* Mint Cream */
+    border: 1px solid #D3D3D3;
+    /* Light Gray */
+}
+aside{
+margin-left: auto;
+}
+.contenido {
+    /*sacado de las etiquetas del trabajo grupal para hacer como las etiquetas de las banderas*/
+    max-width: 1200px;
+    margin: 2rem auto;
+    gap: 2rem;
+}
+
+
+.apartado {
+    justify-items: center;
+    background-color: #f2eefd;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    gap: 1rem;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgb(63, 1, 63);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    /* cambia mas lento el tamaño del apartado */
+}
+
+.apartado:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 4px 8px rgb(107, 65, 107);
+}
+
+.apartado2 {
+    justify-items: center;
+    background-color: #f2eefd;
+    display: flex;
+    margin: auto;
+    gap: 1rem;
+    margin: 1rem;
+    padding: 1rem;
+
+}
+.headerapartadoconicono{
+    display:flex;
+    
+}
+.tituloapartado {
+    max-width: 50%;
+    padding: 5px;
+    background-color: #DCD0FF;
+    border-radius: 5px;
+    display: flex;
+}
+
+.subapartado {
+    width: 40%;
+    justify-items: center;
+    background-color: #f2eefd;
+    margin: auto;
+    gap: 1rem;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgb(63, 1, 63);
+}
+
+.logoxml {
+    max-width: 50%;
+    margin-left: 50%;
+}
+
+.logodtd {
+    margin-left: 60%;
+    width: 150px;
+    max-width: 40%;
+    justify-content: flex-end;
+
+}
+
+.tituloprincipal {
+    display: flex;
+    /* Usamos flexbox */
+    justify-content: space-between;
+    /* Espaciado entre texto e imagen */
+    background-color: #f5effc;
+    border: 2px solid #d8b8f5;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.apartadoli {
+    display: flex;
+    justify-content:space-between;
+}
+.apartadoli div{
+    padding: 10px;
+    max-width: 40%;
+}

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Javier Juarez Canals">
+    <title>Resumen de XML</title>
+    <link rel="stylesheet" href="../css y dtd/resumenxml.css">
+
+</head>
+
+<body>
+    <header class="tituloprincipal">
+
+        <div>
+            <h1>
+                Resumen de XML
+            </h1>
+            XML es un estándar para estructurar y compartir datos entre sistemas. Ofrece flexibilidad mediante
+            etiquetas personalizadas y validación mediante DTD o XML Schema.
+        </div>
+        <aside>
+            <figure><img class="logoxml" src="../imagenes/xml.png"></figure>
+        </aside>
+
+
+    </header>
+
+    <div class="contenido">
+        <section class="apartado">
+            <h2 class="tituloapartado">Definición de XML
+            </h2>
+            <div>
+                Es un lenguaje de marcas cuyo propósito principal es compartir datos a través de diferentes sistemas,
+                como Internet.
+                Es similar a HTML aunque en este las etiquetas se definen de forma manual.
+            </div>
+
+        </section>
+
+        <section class="apartado">
+            <div>
+
+                <h2 class="tituloapartado">XHML<p>
+                </h2>
+
+                Es una versión más estricta de HTML que sigue las reglas de XML.</p>
+                <p>Sigue las reglas de XML para definir la estructura y el contenido de las páginas web.
+                    Compatible con HTML y CSS, tiene el mismo uso que HML y su extensión es xhtml.</p>
+                <p>Aunque ha sido importante en la evolución de los estándares web, en la práctica, HTML5 es la opción
+                    utilizada en el desarrollo web actual.</p>
+            </div>
+
+        </section>
+
+        <section class="apartado">
+            <h2 class="tituloapartado">Características de XML
+            </h2>
+            <div>Es un lenguaje de estructura libre no predefinido en el que las etiquetas se deben definir.
+                <li>Consta de dos partes, prólogo y cuerpo.</li>
+                <li>Usa espacios de nombres para evitar ambigüedades.</li>
+                <li>Su sintaxis es como la de HTML.</li>
+                <li>Utiliza esquemas en forma de árbol con una única raíz.</li>
+                <li>Los documentos se validan.</li>
+            </div>
+
+        </section>
+
+        <section class="apartado">
+            <h2 class="tituloapartado">Estructura y sintaxis de un XML
+            </h2>
+            <div class="apartado2">
+                <div class="subapartado">
+                    <h3>Estructura</h3>
+                    <p>Prólogo</p>
+                    <p>Declaración XML</p>
+                    <p>Información del documento</p>
+                    <p>Espacio de nombres</p>
+                    <p>Hojas de estilo XSLT</p>
+                    <p>Hojas de estilo CSS</p>
+                    <p>Cuerpo</p>
+                    <p>Árbol de contenido.</p>
+                    <p>Una sola raíz.</p>
+                </div>
+                <div class="subapartado">
+                    <h3>Sintaxis</h3>
+                    <div>
+                        Elemento:<br>
+                        Es la unidad fundamental, requiere de una etiqueta de apertura y cierre, atributos con ciertos
+                        valores y el contenido
+                    </div>
+
+                    <div>
+                        Elementos vacíos:
+                        <li>&#60;elemento&#47;&gt;</li>
+                        <li>&#60;elemento&#62;&#60;/elemento&#62;</li>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="apartado">
+            <h2 class="tituloapartado">Crear documentos bien formados
+            </h2>
+            <h3>Normas básicas</h3>
+            <div class="apartadoli">
+                <div>
+                    <li>Prólogo definido. Versión y codificación</li>
+                    <li>Estructura de árbol. Un único nodo raíz</li>
+                    <li>Etiquetas emparejadas. Apertura y cierre</li>
+                </div>
+                <div>
+                    <li>Atributos entre comillas. Simples o dobles</li>
+                    <li>Distingue mayúsculas de minúsculas</li>
+                    <li>Nombres de etiquetas. Similares a variables en programación</li>
+                    <li>Comentarios fuera de etiquetas con: &#60;!- - comentario - -></li>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="apartado">
+            <div class="headerapartadoconicono">
+                <h2 class="tituloapartado">Validación de XML con DTD
+                </h2>
+                <aside>
+                    <figure><img src="../imagenes/dtd_icono.png" class="logodtd">
+                    </figure>
+                </aside>
+            </div>
+            <div>
+                <p>
+                <h3>DTD, Document Tipe Definition</h3>Metalenguaje que permite la descripción del formato que deben
+                cumplir los datos en un documento XML
+                </p>
+                <div class="apartadoli">
+                    <div>Un DTD describe la estructura del documentos
+                        <li>Elementos</li>
+                        <li>Orden</li>
+                    </div>
+                    <div>
+                        Ubicación de DTD
+                        <li>Interno. En el propio documento</li>
+                        <li>Externo. referenciado por URL</li>
+                        <li>Mixto</li>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="apartado">
+            <h2 class="tituloapartado">Elementos de XML
+            </h2>
+            <div class="apartadoli">
+                <div>
+                    <h3>Elemento</h3>
+                    <b>Cardinalidad:</b> Número de veces que aparece el elemento descendiente
+                    <li>?: El elemento aparece 0 o 1 vez.</li>
+                    <li>*: El elemento aparece 0 a N veces.</li>
+                    <li>+: El elemento aparece 1 a N veces.</li>
+
+                    <p><b>Secuencia:</b> Se indican los elementos que deben de aparecer en el fichero XML.</p>
+
+                    <p><b>X, Y:</b> Indica que el elemento X tiene que aparecer a continuación de Y.
+                        (X|Y): Indica que aparece el elemento X o el elemento Y, pero no los dos al mismo tiempo.</p>
+
+                    <p><b>Combinación:</b> Se pueden combinar los símbolos de secuencia y los de cardinalidad</p>
+                </div>
+                <div>
+                    <h3>Atributo</h3>
+                    En DTD los atributos se declaran en una ATTList
+                    <a href="https://www.w3schools.com/xml/xml_dtd_attributes.asp">w3schools</a> muestra tablas con los
+                    tipos de atributos
+                </div>
+                <div>
+                    <h3>Entidad</h3>mecanismo para definir fragmentos de texto reutilizables o para
+                    representar caracteres especiales dentro de un documento XML.Permiten simplificar el
+                    código, evitar repeticiones y manejar caracteres que tienen un significado especial en XML.
+                </div>
+            </div>
+        </section>
+        <section class="apartado">
+            <h2 class="tituloapartado">Enlace a ejercicios de XML</h2>
+            <div>
+                
+            </div>
+        </section>
+    </div>
+
+
+
+    <footer>
+        <div>Creado por Javier J. Canals</div>
+        <div>Página creada como trabajo de clase</div>
+    </footer>
+</body>

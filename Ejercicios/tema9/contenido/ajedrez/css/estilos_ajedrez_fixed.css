@@ -30,9 +30,10 @@ footer {
     max-width: 1000px;
     
 }
+
+/*cambio de tablero*/
 a{
-    color: white;
-    
+    color: white; 
 }
 nav{
     display: flex;
@@ -77,12 +78,14 @@ header{
 }
 .casilla{
     width: 100px;
-    height: 100px;
+    height: 100px;/*sin height y width aqui las casillas vacias no se ven*/
     font-size: 30px;
     align-items: center;
     background-size: cover;
     position: absolute;
 }
+
+/*fondos*/
 .fondonegro {
     background-image: url('../imagenes/fondonegro.png');
 }
@@ -90,6 +93,8 @@ header{
 .fondoblanco {
     background-image: url('../imagenes/fondoblanco.png');
 }
+
+/*casillas*/
 .fila1{
     width: 100px;
     height: 100px;
