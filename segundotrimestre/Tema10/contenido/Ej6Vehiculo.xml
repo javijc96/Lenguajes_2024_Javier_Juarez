@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE vehiculo SYSTEM "../cssydtd/Ej6Vehiculo.dtd">
+
+<vehiculo>
+    <modelo>Focus</modelo>
+    <marca>Ford</marca>
+    <anio>2023</anio>
+    <matricula>ABC-1234</matricula>
+    <combustible>Gasolina</combustible>
+    <potencia>150</potencia>
+</vehiculo>

@@ -1,0 +1,7 @@
+    <!ELEMENT vehiculo (modelo, marca, anio, matricula, combustible, potencia)>
+    <!ELEMENT modelo (#PCDATA)>
+    <!ELEMENT marca (#PCDATA)>
+    <!ELEMENT anio (#PCDATA)>
+    <!ELEMENT matricula (#PCDATA)>
+    <!ELEMENT combustible (#PCDATA)>
+    <!ELEMENT potencia (#PCDATA)>
