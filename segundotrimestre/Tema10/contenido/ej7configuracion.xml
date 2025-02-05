@@ -32,35 +32,37 @@
 
 <configuracion>
     <informacion>
-        <nombre></nombre>
-        <version></version>
-        <autor></autor>
+        <nombre>Javier</nombre>
+        <version>1.0</version>
+        <autor>Javier Juarez Canals</autor>
     </informacion>
 
     <basedatos>
-        <host></host>
-        <puerto></puerto>
-        <usuario></usuario>
-        <contrasena></contrasena>
+        <host>localhost</host>
+        <puerto>5432</puerto>
+        <usuario>usmasta96</usuario>
+        <contrasena>contrasenia123</contrasena>
     </basedatos>
 
     <configusuario>
-        <tema></tema>
-        <idioma></idioma>
+        <tema>uno muy bonito</tema>
+        <idioma>Español de Perú</idioma>
         <preferencias>
-            <notificaciones></notificaciones>
-            <autoguardado></autoguardado>
+            <notificaciones>Si</notificaciones>
+            <autoguardado>5 minutos</autoguardado>
         </preferencias>
     </configusuario>
 
     <parametros>
-        <modo></modo>
+        <modo>produccion</modo>
         <registro>
-            <nivel></nivel>
-            <archivo></archivo>
+            <nivel>info</nivel>
+            <archivo>../configuraciondeltal</archivo>
         </registro>
     </parametros>
 
 
-    <piedepagina> </piedepagina>
+    <piedepagina>
+    Hecho por Javier Juarez Canals 
+    </piedepagina>
 </configuracion>
