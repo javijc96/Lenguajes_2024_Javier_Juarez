@@ -1,14 +1,66 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<!DOCTYPE ejercicio [
-    <!ELEMENT ejercicio (#PCDATA)>
+<!DOCTYPE configuracion [
+    <!ELEMENT configuracion (informacion, basedatos, configusuario, parametros, piedepagina)>
+
+    <!ELEMENT informacion (nombre, version, autor)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT version (#PCDATA)>
+    <!ELEMENT autor (#PCDATA)>
+
+    <!ELEMENT basedatos (host, puerto, usuario, contrasena)>
+    <!ELEMENT host (#PCDATA)>
+    <!ELEMENT puerto (#PCDATA)>
+    <!ELEMENT usuario (#PCDATA)>
+    <!ELEMENT contrasena (#PCDATA)>
+
+    <!ELEMENT configusuario (tema, idioma, preferencias)>
+    <!ELEMENT tema (#PCDATA)>
+    <!ELEMENT idioma (#PCDATA)>
+    <!ELEMENT preferencias (notificaciones, autoguardado)>
+    <!ELEMENT notificaciones (#PCDATA)>
+    <!ELEMENT autoguardado (#PCDATA)>
+
+    <!ELEMENT parametros (modo, registro)>
+    <!ELEMENT modo (#PCDATA)>
+    <!ELEMENT registro (nivel, archivo)>
+    <!ELEMENT nivel (#PCDATA)>
+    <!ELEMENT archivo (#PCDATA)>
+
+    <!ELEMENT piedepagina (#PCDATA)>
 ]>
 
-<ejercicio>
+
 <configuracion>
-<nombre></nombre>
-<version></version>
-<autor></autor>
+    <informacion>
+        <nombre></nombre>
+        <version></version>
+        <autor></autor>
+    </informacion>
+
+    <basedatos>
+        <host></host>
+        <puerto></puerto>
+        <usuario></usuario>
+        <contrasena></contrasena>
+    </basedatos>
+
+    <configusuario>
+        <tema></tema>
+        <idioma></idioma>
+        <preferencias>
+            <notificaciones></notificaciones>
+            <autoguardado></autoguardado>
+        </preferencias>
+    </configusuario>
+
+    <parametros>
+        <modo></modo>
+        <registro>
+            <nivel></nivel>
+            <archivo></archivo>
+        </registro>
+    </parametros>
+
+
+    <piedepagina> </piedepagina>
 </configuracion>
-<piedepagina>
-</piedepagina>
-</ejercicio>
