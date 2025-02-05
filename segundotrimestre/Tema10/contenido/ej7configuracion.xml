@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE ejercicio [
+    <!ELEMENT ejercicio (#PCDATA)>
+]>
+
+<ejercicio>
+<configuracion>
+<nombre></nombre>
+<version></version>
+<autor></autor>
+</configuracion>
+<piedepagina>
+</piedepagina>
+</ejercicio>
