@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    
+    <xs:element name="Pokemon">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="nombre" type="xs:string"/>
+                <xs:element name="numeroPokedex" type="xs:int"/>
+                <xs:element name="descripcion" type="xs:string"/>
+                <xs:element name="tipo" type="xs:string"/>
+                <xs:element name="genero" type="xs:string"/>
+                <xs:element name="estado">
+                    <xs:complexType>
+                        <xs:sequence>
+
+                            <xs:element name="ataques">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="ataque" type="xs:string" maxOccurs="unbounded"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+
+
+                            <xs:element name="estadisticas">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="ataque" type="xs:int"/>
+                                        <xs:element name="ataqueEspecial" type="xs:int"/>
+                                        <xs:element name="velocidad" type="xs:int"/>
+                                        <xs:element name="puntosVida" type="xs:int"/>
+                                        <xs:element name="defensa" type="xs:int"/>
+                                        <xs:element name="defensaEspecial" type="xs:int"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+
+
+                            <xs:element name="nivel" type="xs:int"/>
+                            <xs:element name="faseEvolucion" type="xs:int" minOccurs="0"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
