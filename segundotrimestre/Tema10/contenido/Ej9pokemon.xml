@@ -1,4 +1,106 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<Pokemon>
-	<!-- Add your XML content here -->
-</Pokemon>
+<!DOCTYPE Pokemones [
+
+    <!ELEMENT Pokemones (Pokemon+)>
+    <!ELEMENT Pokemon (nombre, numeroPokedex, descripcion, tipo, genero, estado)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT numeroPokedex (#PCDATA)>
+    <!ELEMENT descripcion (#PCDATA)>
+    <!ELEMENT tipo (#PCDATA)>
+    <!ELEMENT genero (#PCDATA)>
+    <!ELEMENT estado (ataques, estadisticas, nivel, faseEvolucion)>
+    <!ELEMENT ataques (movimiento+)>
+    <!ELEMENT movimiento (#PCDATA)>
+    <!ELEMENT estadisticas (ataque, ataqueEspecial, velocidad, puntosVida, defensa, defensaEspecial)>
+    <!ELEMENT ataque (#PCDATA)>
+    <!ELEMENT ataqueEspecial (#PCDATA)>
+    <!ELEMENT velocidad (#PCDATA)>
+    <!ELEMENT puntosVida (#PCDATA)>
+    <!ELEMENT defensa (#PCDATA)>
+    <!ELEMENT defensaEspecial (#PCDATA)>
+    <!ELEMENT nivel (#PCDATA)>
+    <!ELEMENT faseEvolucion (#PCDATA)>
+]>
+<Pokemones>
+    <Pokemon>
+        <nombre>Swampert</nombre>
+        <numeroPokedex>260</numeroPokedex>
+        <descripcion>Con sus brazos duros como una roca puede partir pedruscos gigantescos en mil
+            pedazos de un solo golpe.</descripcion>
+        <tipo>Agua/Tierra</tipo>
+        <genero>Femenino</genero>
+        <estado>
+            <ataques>
+                <movimiento>Agua lodosa</movimiento>
+                <movimiento>Terremoto</movimiento>
+                <movimiento>Proteccion</movimiento>
+                <movimiento>Rayo hielo</movimiento>
+            </ataques>
+            <estadisticas>
+                <ataque>126</ataque>
+                <ataqueEspecial>96</ataqueEspecial>
+                <velocidad>72</velocidad>
+                <puntosVida>162</puntosVida>
+                <defensa>100</defensa>
+                <defensaEspecial>99</defensaEspecial>
+            </estadisticas>
+            <nivel>50</nivel>
+            <faseEvolucion>3</faseEvolucion>
+        </estado>
+    </Pokemon>
+
+
+    <Pokemon>
+        <nombre>Smoliv</nombre>
+        <numeroPokedex>1001</numeroPokedex>
+        <descripcion>Smoliv es un Pokémon pequeño con una gran capacidad para sobrevivir en entornos
+            áridos. Su aceite puede curar heridas.</descripcion>
+        <tipo>Normal/planta</tipo>
+        <genero>femenino</genero>
+        <estado>
+            <ataques>
+                <movimiento>Placaje</movimiento>
+                <movimiento>Absorber</movimiento>
+                <movimiento>HojaAfilada</movimiento>
+                <movimiento>Campo de hierba</movimiento>
+            </ataques>
+            <estadisticas>
+                <ataque>30</ataque>
+                <ataqueEspecial>50</ataqueEspecial>
+                <velocidad>40</velocidad>
+                <puntosVida>60</puntosVida>
+                <defensa>35</defensa>
+                <defensaEspecial>60</defensaEspecial>
+            </estadisticas>
+            <nivel>10</nivel>
+            <faseEvolucion>1</faseEvolucion>
+        </estado>
+    </Pokemon>
+
+    <Pokemon>
+        <nombre>Garchomp</nombre>
+        <numeroPokedex>445</numeroPokedex>
+        <descripcion>Garchomp es un Pokémon dragón temido por su velocidad y su poder destructivo.
+            Es conocido por su ferocidad en combate.</descripcion>
+        <tipo>Dragon/tierra</tipo>
+        <genero>masculino</genero>
+        <estado>
+            <ataques>
+                <movimiento>Terremoto</movimiento>
+                <movimiento>Garra dragon</movimiento>
+                <movimiento>Cuchillada</movimiento>
+                <movimiento>Triturar</movimiento>
+            </ataques>
+            <estadisticas>
+                <ataque>130</ataque>
+                <ataqueEspecial>80</ataqueEspecial>
+                <velocidad>102</velocidad>
+                <puntosVida>108</puntosVida>
+                <defensa>95</defensa>
+                <defensaEspecial>85</defensaEspecial>
+            </estadisticas>
+            <nivel>60</nivel>
+            <faseEvolucion>3</faseEvolucion>
+        </estado>
+    </Pokemon>
+</Pokemones>
