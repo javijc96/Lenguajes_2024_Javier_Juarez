@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- <!DOCTYPE estacion_meteorologica [
+<!ELEMENT estacion_meteorologica (ubicacion, fecha, hora, temperatura, humedad, presion, viento, lluvia)>
+<!ELEMENT ubicacion (#PCDATA)>
+<!ELEMENT fecha (#PCDATA)>
+<!ELEMENT hora (#PCDATA)>
+<!ELEMENT temperatura (#PCDATA)>
+<!ELEMENT humedad (#PCDATA)>
+<!ELEMENT presion (#PCDATA)>
+<!ELEMENT viento (direccion, velocidad)>
+<!ELEMENT direccion (#PCDATA)>
+<!ELEMENT velocidad (#PCDATA)>
+<!ELEMENT lluvia (#PCDATA)>
+]> -->
+<estacion_meteorologica    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="../xsd/Ej10estacionmeteorologica.xsd">
+    <ubicacion>Ciudad de México</ubicacion>
+    <fecha>2025-02-07</fecha>
+    <hora>14:30</hora>
+    <temperatura>22.5</temperatura>
+    <humedad>65</humedad>
+    <presion>1013</presion>
+    <viento>
+        <direccion>Noroeste</direccion>
+        <velocidad>15</velocidad>
+    </viento>
+    <lluvia>0.2</lluvia>
+</estacion_meteorologica>
