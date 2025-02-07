@@ -8,9 +8,6 @@
 }
 body {
     font-family: 'GothamMedium';
-    background-image: url(./fondosdepantalla/posiblefondo6.jpg);
-    background-size: cover;
-    background-position: center; /* Centra la imagen */
     height: 100vh; /* Asegura que el fondo ocupe toda la altura de la pantalla */
     max-width: 1000px;
     margin: 0 auto;
@@ -45,6 +42,7 @@ header{
 }
 footer {
 
+    width: 100%;
     text-align: center;
     padding: 5px;
     bottom: 0; /* Elimina la posición en la parte inferior*/

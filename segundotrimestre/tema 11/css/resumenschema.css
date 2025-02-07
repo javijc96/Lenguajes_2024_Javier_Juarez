@@ -1,0 +1,63 @@
+header, footer {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    z-index: 1000;
+    background-color: #570577;
+    color: #FFFFFF;
+    padding: 1.5em;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+header{
+    top: 0;
+    left: 0; 
+    margin: 0;    
+}
+footer {
+
+    text-align: center;
+    padding: 5px;
+    bottom: 0;
+    left: 0; 
+    margin: 0; 
+}
+
+body {
+    max-width: 1000px;
+    background: #f9f9f9;
+    color: #333;
+    margin: 100px auto 80px; /* Space for header and footer */
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+section {
+    margin: 40px 0;
+    padding: 20px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1;
+}
+section:first-child {
+    margin-top: 180px; /*hecho para que no solape con el header */
+}
+
+/* Last section extra margin to avoid footer overlap */
+section:last-child {
+    margin-bottom: 100px;
+}
+
+nav a {
+    border-radius: 8px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 5px;
+    padding: 5px 10px;
+    background: #570577;
+    color: white;
+}
