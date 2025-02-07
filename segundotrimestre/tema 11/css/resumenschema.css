@@ -1,3 +1,9 @@
+@font-face {
+    font-family: 'GothamMedium';
+    src: url('../../../fuente/GothamMedium_1.ttf') format('truetype'); /* Cambia la ruta según la ubicación de tu archivo */
+    font-weight: normal;
+    font-style: normal;
+}
 header, footer {
     position: fixed;
     width: 100%;
@@ -25,6 +31,7 @@ footer {
 }
 
 body {
+    font-family: 'GothamMedium';
     max-width: 1000px;
     background: #f9f9f9;
     color: #333;
