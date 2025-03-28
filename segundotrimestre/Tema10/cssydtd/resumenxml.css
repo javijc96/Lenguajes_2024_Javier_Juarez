@@ -60,6 +60,14 @@ section {
 aside{
 margin-left: auto;
 }
+a {
+    color: rgb(63, 1, 63);
+    text-decoration: none;
+    transition: color 0.5s ease; /* Add transition to base style */
+}
+a:hover {
+    color: #d8b8f5;
+}
 .contenido {
     /*sacado de las etiquetas del trabajo grupal para hacer como las etiquetas de las banderas*/
     max-width: 1200px;
@@ -153,8 +161,4 @@ margin-left: auto;
 .apartadoli div{
     padding: 10px;
     max-width: 40%;
-}
-.apartadoli a{
-    color: black;
-    text-decoration: none;
 }
