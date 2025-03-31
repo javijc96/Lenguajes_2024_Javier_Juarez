@@ -58,7 +58,18 @@ ul {
     justify-content: center;
     gap: 1rem;
 }
-
+button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+button:hover {
+    background-color: #218838;
+}
 .contenido{ /*sacado de las etiquetas del trabajo grupal para hacer como las etiquetas de las banderas*/
     max-width: 90%;
     margin: 2rem auto;

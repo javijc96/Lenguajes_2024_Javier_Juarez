@@ -1,0 +1,243 @@
+
+header{
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+    color: white;
+    width: 100%;
+    padding: 20px 0;
+    position:fixed;
+    top: 0;
+    z-index: 1;
+    }
+
+main{
+    margin: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+
+}
+
+main > div {
+    width: 275px;
+    height: 250px;
+    display: flex;
+    background-color: whitesmoke;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    border:2px solid black;
+    margin: 10px;
+    box-shadow: 2px 2px 5px darkgrey;
+}
+div > div{
+    align-items: start;
+    justify-content: start;
+
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.bandera{
+    box-sizing: content-box;
+    width: 250px;
+    height: 150px;
+    border: 1px solid black;    
+    margin: 0;
+}
+/* verticales */
+.francia{
+    background: linear-gradient(to right, blue 33.3%, white 33.3%, white 66.6%, red 66.6%);
+}
+.italia{
+    background: linear-gradient(to right, green 33.3%, white 33.3%, white 66.6%, red 66.6%);    
+}
+.irlanda{
+    background: linear-gradient(to right, green 33.3%, white 33.3%, white 66.6%, orange 66.6%);    
+}
+.belgica{
+    background: linear-gradient(to right, black 33.3%, yellow 33.3%, yellow 66.6%, red 66.6%);    
+}
+.costamarfil{
+    background: linear-gradient(to right, orange 33.3%, white 33.3%, white 66.6%, green 66.6%);    
+   
+}
+.chad{
+    background: linear-gradient(to right, blue 33.3%, yellow 33.3%, yellow 66.6%, red 66.6%);       
+}
+.nigeria{
+    background: linear-gradient(to right, green 33.3%, white 33.3%, white 66.6%, green 66.6%);    
+   
+}
+/* horizontales  */
+.alemania{
+    background: linear-gradient(to bottom, black 33.3%,red 33.3%, red 66.6%, yellow 66.6%);
+}
+.espanya{
+    background: linear-gradient(to top, red 33.3%, yellow 33.3%, yellow 66.6%, red 66.6%);
+}
+.estonia{
+    background: linear-gradient(to top, blue 33.3%, black 33.3%, black 66.6%, white 66.6%);
+}
+.lituania{
+    background: linear-gradient(to top, yellow 33.3%, green 33.3%, green 66.6%, red 66.6%);
+}
+.luxemburgo{
+    background: linear-gradient(to bottom, red 33.3%, white 33.3%, white 66.6%, blue 66.6%);
+}
+.holanda{
+    background: linear-gradient(to bottom, rgb(168, 10, 10) 33.3%, white 33.3%, white 66.6%, rgb(0, 102, 255) 66.6%);
+
+}
+.polonia{
+	background:linear-gradient(white 50%, red 50%, red);
+}
+.hungaria{
+    background: linear-gradient(to bottom, red 33.3%, white 33.3%, white 66.6%, green 66%, green); 
+}
+.ucrania{
+    background: linear-gradient(to bottom, yellow 50%, rgb(7, 120, 158) 50%, rgb(7, 120, 158));
+}
+.rusia{
+    background: linear-gradient(to bottom, white 33.3%, blue 33.3%, blue 66.6%, red 66.6%);
+
+}
+
+/* con triangulo  */
+.palestina{
+    background: linear-gradient(to bottom, black 33.3%,white 33.3%, white 66.6%, green 66.6%);
+}
+.bahamas{
+    background: linear-gradient(to bottom, turquoise 33.3%,yellow 33.3%, yellow 66.6%, turquoise 66.6%);
+
+}
+.sudan{
+    background: linear-gradient(to bottom, red 33.3%,white 33.3%, white 66.6%, black 66.6%);
+}
+.checa{
+    background: linear-gradient(to bottom, white 50%, red 50%);
+}
+.yibuti{
+    background: linear-gradient(to bottom, lightblue 50%, green 50%);    
+}
+
+/* con div a un lado  */
+.madagascar{
+    background: linear-gradient(to bottom, red 0%, red 50%, green 50%, green 100%);
+}
+#madagascar{
+    background-color: white;
+    height: 100%;
+    width: 35%;
+}
+.menim{
+    background: linear-gradient(to bottom, yellow 0%, yellow 50%, red 50%, red 100%);
+}
+#menim{
+    background-color: green;
+    height: 100%;
+    width: 35%;
+}
+.emiratos{
+    background: linear-gradient(to bottom, green 33.3%, white 33.3%, white 66.6%, black 66.6%);
+}
+#emiratos{
+    background-color: red;
+    height: 100%;
+    width: 30%;
+}
+.suiza{
+    background-color: red;
+}
+/* circulos */
+.japon{
+	background:radial-gradient(circle, red 33%, white 33%, white);
+}
+.laos{
+    background: linear-gradient(to bottom, red 25%,blue 25%, blue 75%, red 75%);
+}
+.bangladesh{
+    background:radial-gradient(circle, red 33%, green 33%, green);
+}
+.palaos{
+    background:radial-gradient(circle, yellow 33%, rgb( 74, 173, 214) 33%, rgb( 74, 173, 214)); 
+}
+.niger{
+    background: linear-gradient(to bottom, orange 25%,white 25%, white 75%, green 75%);
+}
+.groenlandia{
+    position: relative;
+    background: linear-gradient(to bottom, white 50%, red 50%);
+}
+/* estrellas y lunas */
+.turquia{
+    background-color: rgb(151, 4, 4); 
+}
+.marruecos{
+    background-color: rgb(151, 4, 4);
+}
+.vietnam{
+    background-color: red;
+}
+.somalia{
+    background-color:rgb( 74, 173, 214);
+}
+.ghana{
+    background: linear-gradient(to bottom, red 33.3%, yellow 33.3%, yellow 66.6%, green 66.6%);
+}
+.burkina{
+	background:linear-gradient(red 50%, green 50%, green);
+}
+.senegal{
+    background: linear-gradient(to right, green 33.3%, yellow 33.3%, yellow 66.6%, red 66.6%);
+}
+.camerun{
+    background: linear-gradient(to right, green 33.3%, red 33.3%, red 66.6%, yellow 66.6%);
+}
+
+/* cruces escandinavas */
+.suecia{
+    background: linear-gradient(to right,transparent 0% 30%,yellow 30% 40%,transparent 40% 100%),
+    linear-gradient(to bottom,transparent 0% 40%, yellow 40% 60%,transparent 60% 100%),
+    blue;
+}
+.finlandia{
+    background: linear-gradient(to right,transparent 0% 30%,blue 30% 40%,transparent 40% 100%),
+    linear-gradient(to bottom,transparent 0% 40%, blue 40% 60%,transparent 60% 100%),
+    white;    
+}
+.noruega {
+    background: linear-gradient(to right, transparent 0% 30%, red 30% 40%, transparent 40% 100%),
+        linear-gradient(to bottom, transparent 0% 40%, red 40% 60%, transparent 60% 100%),
+        linear-gradient(to right, transparent 0% 25%, white 25% 45%, transparent 45% 100%),
+        linear-gradient(to bottom, transparent 0% 35%, white 35% 65%, transparent 65% 100%),
+        blue;
+}
+.dinamarca{
+    background: linear-gradient(to right,transparent 0% 30%,white 30% 40%,transparent 40% 100%),
+    linear-gradient(to bottom,transparent 0% 40%, white 40% 60%,transparent 60% 100%),
+    red;
+}
+.islandia{
+    background: linear-gradient(to right,transparent 0% 30%,#001a5b 30% 40%,transparent 40% 100%),
+    linear-gradient(to bottom,transparent 0% 40%,#001a5b 40% 60%,transparent 60% 100%),
+    linear-gradient(to right,transparent 0% 25%,white 25% 45%,transparent 45% 100%),
+    linear-gradient(to bottom,transparent 0% 35%, white 35% 65%,transparent 65% 100%),
+    red;
+}
+.inglaterra{
+    background: linear-gradient(to right,transparent 0% 45%,white 45% 55%,transparent 55% 100%),
+    linear-gradient(to bottom,transparent 0% 40%, white 40% 60%,transparent 60% 100%),
+    red;
+}
