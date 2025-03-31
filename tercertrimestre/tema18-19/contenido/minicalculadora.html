@@ -1,43 +1,67 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
+    <!-- Configuración de caracteres y vista adaptable -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Javier Juarez Canals">
-    <title>Minicalculadora </title>
+    <title>Minicalculadora</title>
+    
+    <!-- Enlace a fuentes y hoja de estilos externa -->
     <link href="../../../fuente/Gotham-Black.otf" rel="stylesheet">
     <link rel="stylesheet" href="../../index.css">
-
-
 </head>
-<body class="contenido">
-    <label>Primer número: <input type="number" id="numero1"></label><br>
-    <label>Segundo número: <input type="number" id="numero2"></label><br>
-    <button onclick="calcular()">Calcular</button><br>
-    <div>La suma es: <span id="suma"></span></div>
-    <div>El producto es: <span id="producto"></span></div>
-    <div>El número mayor es: <span id="mayor"></span></div>
 
-    <script>
-        function calcular() {
-            const numero1 = Number(document.getElementById("numero1").value);
-            const numero2 = Number(document.getElementById("numero2").value);
-            const suma = numero1 + numero2;
-            const producto = numero1 * numero2;
-            let mayor;
+<body>
+    <!-- Encabezado de la página -->
+    <header>Mini Calculadora</header>
+    
+    <!-- Contenido principal -->
+    <main class="contenido">
+        <!-- Campos de entrada para los números -->
+        <label>Primer número: <input type="number" id="numero1"></label><br>
+        <label>Segundo número: <input type="number" id="numero2"></label><br>
+        
+        <!-- Botón para ejecutar el cálculo -->
+        <button onclick="calcular()">Calcular</button><br>
+        
+        <!-- Resultados de la operación -->
+        <div class="apartado">La suma es: <span id="suma"></span></div>
+        <div class="apartado">El producto es: <span id="producto"></span></div>
+        <div class="apartado">El número mayor es: <span id="mayor"></span></div>
+        
+        <script>
+            // Función que realiza los cálculos y actualiza los resultados en la página
+            function calcular() {
+                // Obtener valores ingresados y convertirlos a números
+                const numero1 = Number(document.getElementById("numero1").value);
+                const numero2 = Number(document.getElementById("numero2").value);
+                
+                // Realizar operaciones matemáticas
+                const suma = numero1 + numero2;
+                const producto = numero1 * numero2;
+                let mayor;
 
-            if (numero1 > numero2) {
-                mayor = numero1;
-            } else if (numero2 > numero1) {
-                mayor = numero2;
-            } else {
-                mayor = "Los números son iguales";
+                // Determinar el número mayor
+                if (numero1 > numero2) {
+                    mayor = numero1;
+                } else if (numero2 > numero1) {
+                    mayor = numero2;
+                } else {
+                    mayor = "Los números son iguales";
+                }
+
+                // Mostrar los resultados en la página
+                document.getElementById("suma").textContent = suma;
+                document.getElementById("producto").textContent = producto;
+                document.getElementById("mayor").textContent = mayor;
             }
-
-            document.getElementById("suma").textContent = suma;
-            document.getElementById("producto").textContent = producto;
-            document.getElementById("mayor").textContent = mayor;
-        }
-    </script>
+        </script>
+    </main>
+    
+    <!-- Pie de página con el autor -->
+    <footer>Autor: Javier Juárez Canals</footer>
 </body>
+
 </html>
