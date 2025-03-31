@@ -16,9 +16,8 @@ h1 {
     text-align: center;
     font-size: 2em;
     text-transform: uppercase; /*todo en mayusculas*/
-
-
 }
+
 
 /* Encabezado y pie de página */
 header, footer {
@@ -41,22 +40,40 @@ footer {
 }
 
 
-
-/* Estilos para enlaces */
-a {
-    text-align: center;
-    background-color: green;
-    color: white;
-    padding: 24px;
-    border-radius: 5%;
-    width: 100%;
+nav {
+    position: relative; /* Asegura que el nav no se superponga */
+    z-index: 10; /* Asegura que el nav se posicione correctamente */
+    display: flex;
+    justify-content: center;
+    margin-top: -10px; /* Ajusta la posición si es necesario */
 }
+
 ul {
+    position: relative; /* Mantiene los elementos en el flujo normal */
     list-style: none;
     padding: 0;
     display: flex;
     justify-content: center;
     gap: 1rem;
+    z-index: 10;
+}
+
+li {
+    position: relative; /* Evita que se superpongan con el header */
+}
+
+a {
+    display: inline-block; /* Mantiene la forma de botón */
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+a:hover {
+    background-color: #1e7e34;
 }
 button {
     padding: 10px 20px;
