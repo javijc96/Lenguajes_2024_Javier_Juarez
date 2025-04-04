@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabla multiplicar</title>
+  <link rel="stylesheet" href="../../index.css">
+  <meta name="author" content="Javier Juarez Canals">
+
+  <style>
+    main {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    #resultado {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      width: 100%;
+      margin-top: 20px;
+    }
+
+    div {
+      display: inline-block;
+      width: 10%;
+    }
+  </style>
+</head>
+
+<body>
+  <header id="tabla-multiplicar">
+    <h1>Tabla de multiplicar</h1>
+  </header>
+  <main>
+    <label>Número: <input type="number" id="numero" /></label><br />
+    <button onclick="calcular()">Calcular</button><br />
+    <div id="resultado"></div>
+  </main>
+
+  <script>
+    function calcular() {
+
+      const numero = Number(document.getElementById("numero").value);
+      const resultado = document.getElementById("resultado");
+      resultado.innerHTML = '';
+
+      for (let j = 1; j <= numero; j++) {
+        const tablaDiv = document.createElement("div");
+        tablaDiv.className = "tabla";
+
+        tablaDiv.innerHTML = "Tabla del " + j + "<br>";
+
+        for (let i = 0; i <= 10; i++) {
+          tablaDiv.innerHTML += j + " x " + i + " = " + (j * i) + "<br>";
+        }
+
+        resultado.appendChild(tablaDiv);
+      }
+    }
+  </script>
+
+  <footer>
+    Autor: Javier Juarez Canals
+  </footer>
+</body>
+
+</html>
