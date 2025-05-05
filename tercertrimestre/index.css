@@ -7,6 +7,7 @@
 }
 *{
     overflow: hidden;
+    
 }
 body {
     font-family: 'Gotham-Black';
@@ -144,7 +145,6 @@ button:hover {
     box-shadow: 6px 6px 12px rgba(30, 173, 0, 0.67);
     transition: transform 0.5s ease, box-shadow 0.5s ease;
     /* cambia mas lento el tamaño del apartado */
-
 }
 
 .apartado:hover {
@@ -203,4 +203,8 @@ button:hover {
     display: block;
     font-size: 48px;
     margin-bottom: 20px;
+}
+
+#curro{
+    max-width: 20%;
 }
