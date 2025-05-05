@@ -1,35 +1,60 @@
 @font-face {
     font-family: 'Gotham-Black';
-    src: url('../fuente/Gotham-Black.otf') format('truetype'); /* Cambia la ruta según la ubicación de tu archivo */
+    src: url('../fuente/Gotham-Black.otf') format('truetype');
+    /* Cambia la ruta según la ubicación de tu archivo */
     font-weight: normal;
     font-style: normal;
 }
-
+*{
+    overflow: hidden;
+}
 body {
     font-family: 'Gotham-Black';
     background-color: white;
     margin: 0 auto;
 }
-main{
-    padding: 5%;
+
+main {
+    margin: 0 auto;
+
 }
+
 /* Encabezado principal */
 h1 {
     text-align: center;
     font-size: 2em;
-    text-transform: uppercase; /*todo en mayusculas*/
+    text-transform: uppercase;
+    /*todo en mayusculas*/
 }
 
+aside {
+    position: fixed;
+    z-index: -9999;
+    /* Valor muy bajo para asegurar que está detrás */
+    height: 100vh;
+    /* Altura total de la ventana */
+    pointer-events: none;
+    /* Permite interactuar con elementos encima */
+    background: none;
+}
 
 /* Encabezado y pie de página */
-header, footer {
+header,
+footer {
     text-align: center;
     background-color: green;
     color: white;
     padding: 1.5em;
     width: 100%;
     border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    filter: drop-shadow(10px 1px 12px rgba(35, 173, 0, 0.67));
+}
+
+header img {
+    position: absolute;
+    right: 2%;
+    top: 7px;
+    height: 120px;
 }
 
 footer {
@@ -43,15 +68,19 @@ footer {
 
 
 nav {
-    position: relative; /* Asegura que el nav no se superponga */
-    z-index: 10; /* Asegura que el nav se posicione correctamente */
+    position: relative;
+    /* Asegura que el nav no se superponga */
+    z-index: 10;
+    /* Asegura que el nav se posicione correctamente */
     display: flex;
     justify-content: center;
-    margin-top: -10px; /* Ajusta la posición si es necesario */
+    margin-top: -10px;
+    /* Ajusta la posición si es necesario */
 }
 
 ul {
-    position: relative; /* Mantiene los elementos en el flujo normal */
+    position: relative;
+    /* Mantiene los elementos en el flujo normal */
     list-style: none;
     padding: 0;
     display: flex;
@@ -61,11 +90,13 @@ ul {
 }
 
 li {
-    position: relative; /* Evita que se superpongan con el header */
+    position: relative;
+    /* Evita que se superpongan con el header */
 }
 
 a {
-    display: inline-block; /* Mantiene la forma de botón */
+    display: inline-block;
+    /* Mantiene la forma de botón */
     padding: 10px 20px;
     background-color: green;
     color: white;
@@ -77,6 +108,7 @@ a {
 a:hover {
     background-color: #1e7e34;
 }
+
 button {
     padding: 10px 20px;
     background-color: #28a745;
@@ -86,30 +118,89 @@ button {
     font-size: 16px;
     border-radius: 5px;
 }
+
 button:hover {
     background-color: #218838;
 }
-.contenido{ /*sacado de las etiquetas del trabajo grupal para hacer como las etiquetas de las banderas*/
-    max-width: 90%;
+
+.contenido {
+    /*sacado de las etiquetas del trabajo grupal para hacer como las etiquetas de las banderas*/
+    max-width: 80%;
     margin: 2rem auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
 }
-.apartado{
-    justify-items: center ;
+
+.apartado {
     display: flex;
+    justify-items: center;
+    justify-content: center;
     max-width: 70%;
-    margin: auto;
-    gap: 1rem;
     margin: 1rem;
     padding: 1rem;
-    background-color: white;
-    border-radius: 5%;
-    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.1);
-    transition: transform 0.5s ease, box-shadow 0.5s ease; /* cambia mas lento el tamaño del apartado */
+    background-color: whitesmoke;
+    border-radius: 5px;
+    box-shadow: 6px 6px 12px rgba(30, 173, 0, 0.67);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    /* cambia mas lento el tamaño del apartado */
+
 }
+
 .apartado:hover {
     transform: translateY(-10px);
-    box-shadow: 6px 6px 16px rgba(0, 0, 0, 0.2);
+    box-shadow: 6px 6px 16px rgba(35, 173, 0, 0.67);
+}
+
+#columna {
+    top: 15%;
+    left: 0;
+    background: none;
+    filter: drop-shadow(10px -9px 82px rgba(35, 173, 0, 0.67));
+
+}
+
+#columna2 {
+    right: 0%;
+    transform: scaleX(-1);
+    /* Invierte verticalmente */
+    top: 15%;
+    right: 0%;
+    filter: drop-shadow(10px -9px 82px rgba(35, 173, 0, 0.67));
+}
+
+#teclainput {
+    width: 300px;
+    /* Ancho fijo */
+    height: 300px;
+    /* Alto igual al ancho para hacerlo cuadrado */
+    padding: 20px;
+    margin: 0;
+    /* Elimina márgenes por defecto */
+    font-size: 100px;
+    text-align: center;
+
+    /* Centrado en la pantalla fijo*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    border: 2px solid green;
+    border-radius: 5px;
+}
+
+#cronometro {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*ayuda a centrar el texto*/
+    text-align: center;
+}
+
+#tiempo {
+    display: block;
+    font-size: 48px;
+    margin-bottom: 20px;
 }

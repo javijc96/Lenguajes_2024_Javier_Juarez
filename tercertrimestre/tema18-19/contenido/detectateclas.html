@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detectador de teclas</title>
+    <link rel="stylesheet" href="../../index.css">
+
+</head>
+
+<body>
+    <header>
+        Detector de teclas
+    </header>
+    <main>
+        <div>
+
+            <button onclick="borrar()" id="teclainput"></button>
+        </div>
+    </main>
+    <script>
+
+        const boton = document.getElementById('teclainput');
+
+        document.addEventListener('keydown', function (evento) {
+            const tecla = evento.key;
+            const codigo = evento.code;
+            /// saca el codigo asci de la tecla pulsada, code es el actual, tambien esta keycode que esta obsoleto
+        
+            if(/^[a-zA-Z]$/.test(tecla)) { /// Lo que hay en el if hace test de si tecla esta entre a y z y A y Z y si cumple imprime
+            boton.textContent = tecla;
+        }
+        });
+
+        function borrar(){
+            boton.textContent = "tecla";
+        }
+
+    </script>
+    <footer>
+        Autor: Javier Juárez Canals
+    </footer>
+</body>

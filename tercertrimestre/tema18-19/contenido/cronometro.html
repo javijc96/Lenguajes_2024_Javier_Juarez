@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronometro</title>
+    <link rel="stylesheet" href="../../index.css">
+
+</head>
+
+<body>
+    <header>
+        Cronómetro
+    </header>
+    <main>
+
+        <div id="cronometro">
+            <span id="tiempo">00:00</span>
+            <div class="controles">
+                <button onclick="subirTiempo()">empezar</button>
+                <button onclick="pausa()">pausa</button>
+                <button onclick="reiniciar()">reiniciar</button>
+            </div>
+        </div>
+    </main>
+    <script>
+        let tiempo = 0;
+        let pausar;
+        let activo = false;
+
+
+        function subirTiempo() { ///sacado del ejercicio del programacion primeros temas
+            if (!activo) {
+                activo = true;
+                intervalo = setInterval(() => { ///setinterval ejecuta la funcion cada 10ms
+                    tiempo++;
+                    let minutos = Math.floor((tiempo / 100) / 60);
+                    let segundos = ((tiempo / 100) % 60);
+                    let milisegundos = tiempo % 100;
+
+                    document.getElementById('tiempo').textContent =
+                    `${minutos.toString().padStart(2,'0')}:${segundos.toString().padStart(2,'0')}`;
+                    ///el padstart da los numeros desde el principio con dos digitos
+                }, 10);
+                ///los 10 milisegundos del setinterval
+            }
+        }
+        
+        function pausa() {
+                clearInterval(intervalo);
+                activo = false;
+            }
+        function reiniciar() {
+            activo = false;
+            tiempo = 0;
+            documetn.getElementById('tiempo').textContent = '00:00:00';
+        }
+    </script>
+    <footer>
+        Autor: Javier Juárez Canals
+        <a href="./index.html">Vuelta al index</a>
+    </footer>
+</body>
