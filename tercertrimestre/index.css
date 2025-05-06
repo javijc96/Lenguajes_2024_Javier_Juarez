@@ -5,10 +5,11 @@
     font-weight: normal;
     font-style: normal;
 }
-*{
+
+* {
     overflow: hidden;
-    
 }
+
 body {
     font-family: 'Gotham-Black';
     background-color: white;
@@ -190,6 +191,7 @@ button:hover {
     border-radius: 5px;
 }
 
+/*ejercicio de tiempo*/
 #cronometro {
     position: absolute;
     top: 50%;
@@ -205,6 +207,31 @@ button:hover {
     margin-bottom: 20px;
 }
 
-#curro{
+
+/* ejercicio vacaciones*/
+#curro {
     max-width: 20%;
+    cursor: grab;
+    transition: transform 0.5s;
+    position: absolute;
+}
+
+.destino {
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    max-width: 70%;
+    max-height: fit-content;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+
+
+.destino #unicornio {
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
 }

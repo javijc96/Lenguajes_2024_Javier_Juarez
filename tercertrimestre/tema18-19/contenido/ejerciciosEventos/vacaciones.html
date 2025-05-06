@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>De vacaciones</title>
     <link rel="stylesheet" href="../../../index.css">
-
 </head>
 
 <body>
@@ -16,32 +15,31 @@
 
     <main>
 
-        <div>me voy de vacaciones</div>
-        <div>
-            <img src="../../imágenes/unicornio.png" alt="Curro" id="curro" draggable="true">
+        <div id="mensaje">me voy de vacaciones</div>
+        <div draggable="true">
+            <img src="../../imágenes/unicornio.png" alt="Curro" id="curro">
         </div>
 
         <div class="contenido">
 
-            <div class="apartado" id="playa">
+            <div class="destino" id="playa" data-destino="la playa">
                 <img src="../../imágenes/playa.JPG" alt="playa">
             </div>
-            <div class="apartado" id="lago">
+            <div class="destino" id="lago" data-destino="el lago">
                 <img src="../../imágenes/lago.jpg" alt="lago">
             </div>
-            <div class="apartado" id="bosque">
+            <div class="destino" id="bosque" data-destino="el bosque">
                 <img src="../../imágenes/bosque.JPG" alt="bosque">
             </div>
-            <div class="apartado" id="ciudad">
+            <div class="destino" id="ciudad" data-destino="la ciudad">
                 <img src="../../imágenes/ciudad.JPG" alt="ciudad">
             </div>
         </div>
-
     </main>
-    <script>
 
-    </script>
     <footer>
         Autor: Javier Juárez Canals
     </footer>
+    <script src="./js/vacaciones.js"></script>
+
 </body>
