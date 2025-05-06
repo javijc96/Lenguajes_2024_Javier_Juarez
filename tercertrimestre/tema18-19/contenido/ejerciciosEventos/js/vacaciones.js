@@ -23,7 +23,5 @@ destinos.forEach(destino => {
 
         // Actualizar mensaje
         mensaje.textContent = `Vas a ${destinoNombre}`;
-
-
     });
 });
