@@ -1,136 +1,88 @@
-// Espera a que todo el contenido del DOM esté completamente cargado antes de ejecutar el JS
+// Espera a que la pagina cargue+
 document.addEventListener('DOMContentLoaded', function () {
 
-    
-    // VARIABLES
-    
-
-    // Lista de palabras posibles que se pueden adivinar
-    const listaPalabras = ['caballo', 'oveja', 'cerdo', 'chimpance'];
-
-    // Array donde se guardará la palabra actual dividida en letras
+    const palabras = ['diablo', 'patio', 'feria', 'clase', 'metodo'];
     let palabraAdivinar = [];
-
-    // Array que se muestra al usuario con guiones (_) y letras acertadas
     let palabraMostrar = [];
+    let fallos = [];
+    let intentosRestantes = 5;
+    let posicionLetra = document.querySelector('#letra');
 
-    // Array con el historial de letras que ha introducido el usuario y que han fallado
-    let historialLetrasUsuario = [];
 
-    // Número máximo de intentos fallidos que el jugador puede tener
-    let numIntentos = 5;
 
-    // Captura de nodos del DOM para interactuar con los elementos del HTML
-    let nodoLetra = document.querySelector('#letra');         // Input de texto para escribir letras
-    let nodoBoton = document.querySelector('#boton');         // Botón de "Comprobar"
-    let nodoResultado = document.querySelector('#resultado'); // Div donde se muestra la palabra parcial
-    let nodoIntentos = document.querySelector('#intentos');   // Div donde se muestran los intentos restantes
-    let nodoHistorial = document.querySelector('#historial'); // Div donde se muestran las letras fallidas
-
-    // FUNCIONES
-
-    /**
-     * Prepara el juego para iniciarse con una nueva palabra aleatoria
-     */
-    function prepararJuego () {
-        // 1. Selecciona una posición aleatoria en la lista de palabras
-        let posAleatoriaListaPalabras = _.random(listaPalabras.length - 1); // usando Lodash _.random()
-
-        // 2. Obtiene la palabra aleatoria y la divide en letras
-        let palabraAleatoria = listaPalabras[posAleatoriaListaPalabras];
+    function juego() {
+        let palabraAleatoria = palabras[Math.floor(Math.random() * palabras.length)];;
         palabraAdivinar = palabraAleatoria.split('');
+        //saca palabra aleatoria y divide por letras
 
-        // 3. Llena el array visible con guiones bajos (_), uno por cada letra
         for (let letra of palabraAdivinar) {
             palabraMostrar.push('_');
-        }
+        }//para enseñar los _ en el sitio de rellenar la palabra
 
-        // 4. Dibuja el estado inicial del juego en pantalla
-        dibujarJuego();
+        rellenar();//rellena casilla
     }
 
-    /**
-     * Redibuja la interfaz del juego con los datos actuales
-     */
-    function dibujarJuego () {
-        // Muestra la palabra parcial con guiones y letras acertadas
-        nodoResultado.textContent = palabraMostrar.join(' ');
 
-        // Muestra los intentos restantes
-        nodoIntentos.textContent = numIntentos;
+    let letrasUsadas = document.querySelector('#fallos');
+    let intentos = document.querySelector('#intentos');
+    let resultado = document.querySelector('#resultado');
 
-        // Muestra las letras que el usuario ha fallado
-        nodoHistorial.textContent = historialLetrasUsuario.join(' ');
+    // convierte el array a texto y se enseña en resultado, muestra intentos y los fallos
+    function rellenar() {
+        resultado.textContent = palabraMostrar.join(' ');
+        intentos.textContent = intentosRestantes;
+        letrasUsadas.textContent = fallos.join(' ');
     }
 
-    /**
-     * Función que se ejecuta cuando el usuario introduce una letra
-     */
-    function comprobarLetraUsuario () {
-        // 1. Obtiene la letra que ha escrito el usuario
-        let letraUsuario = nodoLetra.value;
+    function comprobarLetra() {
+        let letraInput = posicionLetra.value;
+        posicionLetra.value = '';
 
-        // 2. Limpia el input y vuelve a darle foco
-        nodoLetra.value = '';
-        nodoLetra.focus();
-
-        // 3. Recorre la palabra original para ver si la letra está y dónde
-        for (const [posicion, letraAdivinar] of palabraAdivinar.entries()) {
-            if (letraUsuario == letraAdivinar) {
-                // Si acierta, se sustituye el guion por la letra correspondiente
-                palabraMostrar[posicion] = letraAdivinar;
+        // Recorre la palabra letra a letra
+        for (let i = 0; i < palabraAdivinar.length; i++) {
+            if (letraInput === palabraAdivinar[i]) {
+                palabraMostrar[i] = palabraAdivinar[i];
             }
         }
 
-        // 4. Si la letra no estaba en la palabra, se descuenta un intento y se guarda en el historial
-        if (!palabraAdivinar.includes(letraUsuario)) {
-            numIntentos -= 1;
-            historialLetrasUsuario.push(letraUsuario);
+        if (!palabraAdivinar.includes(letraInput)) {
+            intentosRestantes -= 1;
+            fallos.push(letraInput);
         }
 
-        // 5. Comprueba si el juego ha terminado (ganado o perdido)
-        acabarJuego();
-
-        // 6. Redibuja la interfaz con los cambios
-        dibujarJuego();
+        fin();
+        rellenar();
     }
 
-    /**
-     * Detecta si se ha pulsado la tecla Enter y llama a la función para comprobar la letra
-     */
-    function comprobarPulsadoEnter (evento) {
+
+    //para comprobar si se ha terminado la palabra
+    function fin() {
+        if (!palabraMostrar.includes('_')) { //gana
+            alert('Has descubierto la palabra ' + palabraAdivinar.join(''));
+            location.reload(true); //reinicio, recomendacion del bueno de gepeto
+        }
+        if (intentosRestantes == 0) {//pierde
+            alert('Perdiste, la palabra era: ' + palabraAdivinar.join(''));
+            location.reload(true);
+        }
+    }
+
+    //comprobar con enter y con letra, consejo del bueno de gepeto
+
+    let boton = document.querySelector('#boton');
+    boton.addEventListener('click', comprobarLetra);
+    //ejecuta comprobvar al clicar
+
+
+    function comprobar(evento) {
         if (evento.code == 'Enter') {
-            comprobarLetraUsuario();
+            comprobarLetra();
         }
     }
+    posicionLetra.addEventListener('keyup', comprobar);
+    //ejecuta comprobar al darle al enter
 
-    /**
-     * Verifica si se ha ganado o perdido y reinicia el juego si es necesario
-     */
-    function acabarJuego () {
-        // Si ya no hay guiones, es que el jugador ha adivinado todas las letras
-        if (!palabraMostrar.includes('_')) {
-            alert('Has ganado!!!');
-            location.reload(true); // Recarga la página para jugar otra vez
-        }
 
-        // Si se han agotado los intentos, el jugador pierde
-        if (numIntentos == 0) {
-            alert('Has Perdido!!! Era: ' + palabraAdivinar.join(''));
-            location.reload(true); // Recarga la página para jugar otra vez
-        }
-    }
-
-    // EVENTOS
-
-    // Al hacer clic en el botón, se comprueba la letra
-    nodoBoton.addEventListener('click', comprobarLetraUsuario);
-
-    // Al pulsar Enter en el input, también se comprueba la letra
-    nodoLetra.addEventListener('keyup', comprobarPulsadoEnter);
-
-    // INICIO
-
-    // Se inicia el juego automáticamente al cargar la página
-    prepararJuego();
+    juego();
+    
 });
