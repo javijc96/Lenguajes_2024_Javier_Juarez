@@ -63,8 +63,7 @@ footer {
     /* Fija el pie de página abajo */
     bottom: 0;
     padding: 1em;
-    height: auto;
-}
+    max-height: 5%;}
 
 
 nav {
@@ -207,31 +206,65 @@ button:hover {
 
 
 /* ejercicio vacaciones*/
-#curro {
-    max-width: 20%;
-    cursor: grab;
-    transition: transform 0.5s;
-    position: absolute;
-}
-.destino {
-    display: flex;
-    justify-items: center;
-    justify-content: center;
-    max-width: 70%;
-    max-height: fit-content;
-    margin: 1rem;
-    padding: 1rem;
-    border-radius: 5px;
-}
-.destino #unicornio {
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 10;
+
+
+#vacaciones {
+  text-align: center;
+  padding: 20px;
 }
 
+#vacaciones #mensaje {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 30px 0 20px;
+  position: static; /* 🔧 Elimina el posicionamiento absoluto */
+}
+
+#vacaciones #zona-curro {
+  margin-bottom: 20px;
+}
+
+#vacaciones #curro {
+  width: 100px;
+  cursor: grab;
+}
+
+#vacaciones .contenedor-imagenes {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+#vacaciones .destino {
+  position: relative;
+  border: 4px solid green;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 150px;
+  height: 150px;
+  background-color: white;
+  transition: transform 0.3s ease;
+}
+
+#vacaciones .destino:hover {
+  transform: scale(1.05);
+}
+
+#vacaciones .destino img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#vacaciones #volver {
+  margin-top: 10px;
+}
+
+
 /*Ejercicio monitor*/
-#menumonitor{
+#menumonitor {
     display: flex;
     gap: 30px;
     width: 100%;
@@ -240,7 +273,8 @@ button:hover {
     align-items: flex-start;
     flex-wrap: wrap;
 }
-#zonainput{
+
+#zonainput {
     width: 60%;
     min-width: 300px;
     height: 300px;
