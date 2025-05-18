@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Javier Juarez Canals">
+  <title>Propagacion y prevent</title>
+  <link rel="stylesheet" href="../../../index.css">
+</head>
+
+<body>
+  <main id="eventos">
+    <header>Ejercicio Eventos JavaScript</header>
+
+    <!-- stopPropagation -->
+    <section id="propagation">
+      <h3>Demostración de stopPropagation()</h3>
+      <div id="padre">
+        Padre
+        <button id="hijo1">Hijo 1 (con stopPropagation)</button>
+        <button id="hijo2">Hijo 2 (sin stopPropagation)</button>
+      </div>
+    </section>
+
+    <!-- preventDefault -->
+    <section id="prevent">
+      <h3>Demostración de preventDefault()</h3>
+      <button id="toggle-enlace">Desactivar/Activar Enlace</button>
+      <p><a id="enlace" href="https://w3schools.com">Ir a W3Schools</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Autor: Javier Juárez Canals</p>
+    <a href="./index.html">Índice de eventos</a>
+
+  </footer>
+
+  <script src="./js/Propagacion.js"></script>
+</body>
+
+</html>

@@ -60,14 +60,14 @@ header img {
 }
 
 footer {
-  font-size: 0.8em;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background-color: green;
-  color: white;
-  text-align: center;
+    font-size: 0.8em;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: green;
+    color: white;
+    text-align: center;
 }
 
 
@@ -209,7 +209,7 @@ button:hover {
     margin-bottom: 20px;
 }
 
-
+/*-----------------------------------------------------------------------------------*/
 /* ejercicio vacaciones*/
 
 
@@ -268,8 +268,8 @@ button:hover {
     margin-top: 10px;
 }
 
-
-/*Ejercicio monitor*/
+/*-----------------------------------------------------------------------------------*/
+/* Ejercicio monitor */
 #monitor {
     margin-top: 0;
     padding: 20px;
@@ -318,58 +318,60 @@ button:hover {
 
 /* Botón limpiar */
 #limpiar {
-  background-color: green;
-  color: white;
-  border: none;
-  font-weight: bold;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+    background-color: green;
+    color: white;
+    border: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 #limpiar:hover {
-  background-color: #146c24;
+    background-color: #146c24;
 }
 
 /* Círculo rojo */
 #circulo {
-  width: 50px;
-  height: 50px;
-  background-color: red;
-  border-radius: 50%;
-  position: absolute;
-  top: 180px;
-  left: 170px;
-  cursor: grab;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    top: 180px;
+    left: 170px;
+    cursor: grab;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 #circulo:active {
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-  cursor: grabbing;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    cursor: grabbing;
 }
 
 /* Historial */
 #zonaoutput {
-  width: 300px;
-max-height: 60vh; /* Ocupa hasta el 60% de la altura de la ventana */
-  height: 400px;    /* Altura base mayor */
-  overflow-y: auto;
-  background-color: #f0fff0;
-  border: 2px solid green;
-  border-radius: 10px;
-  padding: 10px;
-  box-shadow: 0 2px 6px rgba(0, 128, 0, 0.2);
+    width: 300px;
+    max-height: 60vh;
+    /* Ocupa hasta el 60% de la altura de la ventana */
+    height: 400px;
+    /* Altura base mayor */
+    overflow-y: auto;
+    background-color: #f0fff0;
+    border: 2px solid green;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 2px 6px rgba(0, 128, 0, 0.2);
 }
 
 #zonaoutput::before {
-  content: "Registro de eventos:";
-  display: block;
-  font-weight: bold;
-  text-align: center;
-  color: green;
-  margin-bottom: 8px;
+    content: "Registro de eventos:";
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    color: green;
+    margin-bottom: 8px;
 }
 
 
@@ -387,4 +389,85 @@ max-height: 60vh; /* Ocupa hasta el 60% de la altura de la ventana */
     margin-bottom: 5px;
     word-break: break-word;
     white-space: normal;
+}
+
+
+/*-----------------------------------------------------------------------------------*/
+
+#eventos {
+    margin-top: 0;
+    background-color: white;
+    color: #1a1a1a;
+    padding: 20px;
+        padding-top: 0;
+    text-align: center;
+}
+
+/* Título principal */
+#eventos h2 {
+    background-color: green;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+/* Cada sección del ejercicio */
+#eventos section {
+    margin-bottom: 40px;
+}
+
+/* stopPropagation()*/
+#propagation h3 {
+    color: green;
+    margin-bottom: 15px;
+}
+
+#padre {
+    border: 3px solid green;
+    border-radius: 10px;
+    padding: 30px;
+    background-color: #f0fff0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(0, 128, 0, 0.2);
+}
+
+#padre button {
+    background-color: white;
+    color: green;
+    border: 2px solid green;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+#padre button:hover {
+    background-color: #d2fbd2;
+}
+
+/* preventDefault() */
+#prevent h3 {
+    color: green;
+    margin-bottom: 15px;
+}
+
+#toggle-enlace {
+    margin-bottom: 10px;
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#toggle-enlace:hover {
+    background-color: #146c24;
 }
