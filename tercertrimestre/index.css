@@ -674,3 +674,97 @@ padding: 0;
 #cadena .contenedor p {
   margin: 6px 0;
 }
+
+/*-----------------------------------------------------------------------------------*/
+/* Ejercicio de cajas */
+
+#ejercicioCajas {
+  background-color: white;
+  color: #1a1a1a;
+  padding: 20px;
+  padding-bottom: 80px; /* Espacio para el footer */
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+#ejercicioCajas header {
+  background-color: green;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 8px rgba(0, 128, 0, 0.3);
+}
+
+#ejercicioCajas .contenido {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#ejercicioCajas .contenido > div {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#ejercicioCajas .contenido label {
+  display: block;
+  margin-bottom: 12px;
+  font-weight: bold;
+}
+
+#ejercicioCajas .contenido input,
+#ejercicioCajas .contenido select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  border: 2px solid green;
+  border-radius: 6px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+#ejercicioCajas .contenido button {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+#ejercicioCajas .contenido button:hover {
+  background-color: #126c2d;
+}
+
+#ejercicioCajas .resultado {
+  background-color: #f0fff0;
+  border: 2px solid green;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 16px;
+  box-shadow: 0 2px 6px rgba(0, 128, 0, 0.15);
+  line-height: 1.6;
+}
+
+/* Footer general (fuera del main) */
+footer {
+  background-color: green;
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+  font-size: 0.9em;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin-top: 40px;
+}
