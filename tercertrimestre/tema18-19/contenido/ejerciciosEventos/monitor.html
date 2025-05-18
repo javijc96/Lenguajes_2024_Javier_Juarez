@@ -11,21 +11,31 @@
 </head>
 
 <body>
-    <header>
-        Monitor
-    </header>
-    <main>
 
+  <main id="monitor">
+    <header>Monitor de Eventos</header>
 
-        <div class="contenido">
-            <div>
-                
-            </div>
+    <div id="menumonitor">
+      <!-- Columna izquierda: zona + botón -->
+      <div class="columnaizquierda">
+        <div id="zonainput">
+          <p>Interacción aquí</p>
+          <div id="circulo" draggable="true"></div>
         </div>
-    </main>
+        <button id="limpiar">Limpiar Historial</button>
+      </div>
 
+      <!-- Historial -->
+      <div id="zonaoutput">
+        <ul id="historial"></ul>
+      </div>
+    </div>
+
+  </main>
     <footer>
         <p>Autor: Javier Juárez Canals</p>
         <a href="./index.html">Vuelta al index</a>
     </footer>
+
+        <script src="./js/monitor.js"></script>
 </body>

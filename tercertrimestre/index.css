@@ -6,18 +6,20 @@
     font-style: normal;
 }
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
 
 
 body {
     font-family: 'Gotham-Black';
     background-color: white;
+    overflow-x: hidden;
     margin: 0 auto;
 }
 
-main {
-    margin: 0 auto;
-
-}
 
 /* Encabezado principal */
 h1 {
@@ -58,12 +60,15 @@ header img {
 }
 
 footer {
-    font-size: 0.9em;
-    position: fixed;
-    /* Fija el pie de página abajo */
-    bottom: 0;
-    padding: 1em;
-    max-height: 5%;}
+  font-size: 0.8em;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: green;
+  color: white;
+  text-align: center;
+}
 
 
 nav {
@@ -123,7 +128,7 @@ button:hover {
 }
 
 .contenido {
-    /*sacado de las etiquetas del trabajo grupal para hacer como las etiquetas de las banderas*/
+    width: 100%;
     max-width: 80%;
     margin: 2rem auto;
     display: grid;
@@ -209,77 +214,177 @@ button:hover {
 
 
 #vacaciones {
-  text-align: center;
-  padding: 20px;
+    text-align: center;
+    padding: 20px;
 }
 
 #vacaciones #mensaje {
-  font-size: 24px;
-  font-weight: bold;
-  margin: 30px 0 20px;
-  position: static; /* 🔧 Elimina el posicionamiento absoluto */
+    font-size: 24px;
+    font-weight: bold;
+    margin: 30px 0 20px;
+    position: static;
+    /* 🔧 Elimina el posicionamiento absoluto */
 }
 
 #vacaciones #zona-curro {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 #vacaciones #curro {
-  width: 100px;
-  cursor: grab;
+    width: 100px;
+    cursor: grab;
 }
 
 #vacaciones .contenedor-imagenes {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-  margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
 }
 
 #vacaciones .destino {
-  position: relative;
-  border: 4px solid green;
-  border-radius: 8px;
-  overflow: hidden;
-  width: 150px;
-  height: 150px;
-  background-color: white;
-  transition: transform 0.3s ease;
+    position: relative;
+    border: 4px solid green;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    transition: transform 0.3s ease;
 }
 
 #vacaciones .destino:hover {
-  transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 #vacaciones .destino img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 #vacaciones #volver {
-  margin-top: 10px;
+    margin-top: 10px;
 }
 
 
 /*Ejercicio monitor*/
+#monitor {
+    margin-top: 0;
+    padding: 20px;
+    background-color: #ffffff;
+    color: #1a1a1a;
+    text-align: center;
+}
+
+/* Título */
+#monitor header {
+    background-color: green;
+    color: white;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Contenedor principal (zona + historial) */
 #menumonitor {
     display: flex;
     gap: 30px;
-    width: 100%;
-    max-width: 1000px;
     justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
+/* Zona de interacción */
 #zonainput {
-    width: 60%;
-    min-width: 300px;
+    width: 400px;
     height: 300px;
-    text-align: center;
-    padding: 20px;
-    position: relative;
+    border: 2px dashed green;
     border-radius: 10px;
+    position: relative;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Texto dentro de zona */
+#zonainput p {
+    margin-top: 0;
+    margin-bottom: 40px;
+    color: gray;
+    font-weight: bold;
+}
+
+/* Botón limpiar */
+#limpiar {
+  background-color: green;
+  color: white;
+  border: none;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#limpiar:hover {
+  background-color: #146c24;
+}
+
+/* Círculo rojo */
+#circulo {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  border-radius: 50%;
+  position: absolute;
+  top: 180px;
+  left: 170px;
+  cursor: grab;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#circulo:active {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  cursor: grabbing;
+}
+
+/* Historial */
+#zonaoutput {
+  width: 300px;
+max-height: 60vh; /* Ocupa hasta el 60% de la altura de la ventana */
+  height: 400px;    /* Altura base mayor */
+  overflow-y: auto;
+  background-color: #f0fff0;
+  border: 2px solid green;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 2px 6px rgba(0, 128, 0, 0.2);
+}
+
+#zonaoutput::before {
+  content: "Registro de eventos:";
+  display: block;
+  font-weight: bold;
+  text-align: center;
+  color: green;
+  margin-bottom: 8px;
+}
+
+
+/* Lista de eventos */
+#historial {
+    list-style: none;
+    padding-left: 0;
+    text-align: left;
+    font-size: 0.9em;
+    display: flex;
+    flex-direction: column;
+}
+
+#historial li {
+    margin-bottom: 5px;
+    word-break: break-word;
+    white-space: normal;
 }
