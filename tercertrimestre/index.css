@@ -223,7 +223,7 @@ button:hover {
     font-weight: bold;
     margin: 30px 0 20px;
     position: static;
-    /* 🔧 Elimina el posicionamiento absoluto */
+    /*Elimina el posicionamiento absoluto */
 }
 
 #vacaciones #zona-curro {
@@ -535,3 +535,79 @@ footer {
   margin-top: 60px;
   width: 100%;
 }
+
+
+/*-----------------------------------------------------------------------------------*/
+
+/* Ejercicio de modificar clases */
+
+
+/* Botonera */
+#clases-dom .botonera {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 25px;
+  margin-top: 10px;
+}
+
+#clases-dom .botonera button {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+#clases-dom .botonera button:hover {
+  background-color: #126c2d;
+}
+
+/* Tarjeta modificable */
+#clases-dom .tarjeta {
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  color: green;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 128, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+/* Clases dinámicas */
+#clases-dom .color-fondo {
+  background-color: #d2fbd2;
+}
+
+#clases-dom .bordes-punteados {
+  border: 2px dashed green;
+}
+
+#clases-dom .bordes-redondeados {
+  border-radius: 20px;
+}
+
+#clases-dom .oculto {
+  display: none;
+}
+
+#clases-dom .grande {
+  width: 300px;
+  height: 300px;
+}
+
+#clases-dom .chico {
+  width: 100px;
+  height: 100px;
+}
+
