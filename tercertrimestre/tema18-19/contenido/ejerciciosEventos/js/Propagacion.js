@@ -9,14 +9,14 @@ padre.addEventListener("click", () => {
   alert("Clic recibido en el PADRE");
 });
 
-// hijo1 usa stopPropagation → evita que el clic llegue al padre
+// hijo1 usa stopPropagation y evita que el clic llegue al padre
 hijo1.addEventListener("click", (e) => {
   e.stopPropagation();
   console.log("Clic en HIJO 1 (detenido)");
   alert("Hiciste clic en Hijo 1 (no llega al padre)");
 });
 
-// hijo2 no lo usa → el clic se propaga hasta el padre
+// hijo2 no lo usa, el clic se propaga hasta el padre
 hijo2.addEventListener("click", () => {
   console.log("Clic en HIJO 2 (se propaga)");
   alert("Hiciste clic en Hijo 2 (el evento sube al padre)");

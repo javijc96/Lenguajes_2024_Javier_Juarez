@@ -412,7 +412,6 @@ button:hover {
     margin-bottom: 30px;
 }
 
-/* Cada sección del ejercicio */
 #eventos section {
     margin-bottom: 40px;
 }
@@ -470,4 +469,69 @@ button:hover {
 
 #toggle-enlace:hover {
     background-color: #146c24;
+}
+
+/*-----------------------------------------------------------------------------------*/
+
+/*Ejercicio de contar divs*/
+
+/* === Estilo general del ejercicio === */
+#contar-divs {
+  background-color: white;
+  color: #1a1a1a;
+  padding: 20px;
+  padding-top: 0;
+  text-align: center;
+}
+
+
+
+/* Zona con los divs a contar */
+.zona-divs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.zona-divs div {
+    margin-top: 10px;
+  width: 100px;
+  height: 50px;
+  border: 2px solid green;
+  border-radius: 8px;
+  background-color: #f0fff0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0, 128, 0, 0.2);
+}
+
+/* Resultado */
+.resultado {
+  background-color: #f0fff0;
+  border: 2px solid green;
+  border-radius: 10px;
+  padding: 20px 30px;
+  display: inline-block;
+  text-align: left;
+  box-shadow: 0 2px 6px rgba(0, 128, 0, 0.15);
+}
+
+.resultado p {
+  margin: 8px 0;
+  font-size: 1em;
+}
+
+/* Footer */
+footer {
+  font-size: 0.9em;
+  background-color: green;
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+  margin-top: 60px;
+  width: 100%;
 }
