@@ -1,0 +1,9 @@
+[
+  {"color": "amarillo", "precio": 10},
+  {"color": "azul", "precio": 3},
+  {"color": "morado", "precio": 4},
+  {"color": "celeste", "precio": 5},
+  {"color": "rojo", "precio": 2},
+  {"color": "verde", "precio": 12},
+  {"color": "naranja", "precio": 5}
+]

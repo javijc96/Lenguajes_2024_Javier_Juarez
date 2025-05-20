@@ -1,0 +1,181 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: green;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0.5rem 0;
+}
+
+/* Barra de configuración */
+.configuracion {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: #eee;
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
+}
+
+.configuracion label {
+    font-weight: bold;
+}
+
+.configuracion input {
+    width: 60px;
+    padding: 0.3rem;
+    margin-left: 0.3rem;
+}
+
+.configuracion button {
+    padding: 0.5rem 1rem;
+    background-color: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.configuracion button:hover {
+    background-color: rgb(0, 56, 0);
+}
+
+/* Sección de piezas (contenedor de imágenes) */
+#contenedorPiezas {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding: 1rem;
+    background-color: #ddd;
+    border-bottom: 1px solid #bbb;
+    justify-content: center;
+}
+
+.pieza {
+    height: 50px;
+    width: auto;
+    cursor: grab;
+    image-rendering: pixelated; /* opcional, mejora nitidez en sprites pixelados */
+}
+
+
+/* Zona principal */
+#zonaPrincipal {
+    display: flex;
+    padding: 1rem;
+    gap: 2rem;
+}
+
+/* Panel izquierdo */
+/* Estilo para el panel izquierdo */
+#panelIzquierdo {
+    width: 200px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    min-height: 500px; /* Establece una altura mínima */
+    border-radius: 5px;
+}
+
+
+#panelIzquierdo ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1rem 0;
+}
+
+#panelIzquierdo li {
+    margin: 0.5rem 0;
+}
+
+/* Botón actualizar */
+#actualizarPrecios {
+    width: 100%;
+    padding: 0.5rem;
+    background-color: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#actualizarPrecios:hover {
+    background-color: rgb(0, 31, 0);
+}
+
+/* Tabla de presupuesto */
+#presupuesto {
+    flex: 1;
+    background-color: #fff;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    max-height: 400px;
+    border-radius: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: green;
+    color: white;
+}
+
+th,
+td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+
+tfoot td {
+    font-weight: bold;
+    background-color: #f0f0f0;
+}
+
+/* Pie de página */
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    background-color: green;
+    color: white;
+    margin-top: 2rem;
+}
+
+.input-error {
+    border: 2px solid red;
+    background-color: #ffe5e5;
+}
+
+
+/* Estilo para cada elemento de la lista de precios */
+#listaPrecios li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin: 3rem 0; /* Aumenta el espacio vertical entre elementos */
+}
+
+/* Estilo para las imágenes dentro de la lista de precios */
+#listaPrecios li img {
+    width: 30px;
+    height: auto;
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Javier Juarez Canals">
+    <title>presupuesto tetris</title>
+    <link rel="stylesheet" href="./tetris.css">
+</head>
+
+<body>
+    <header>
+        <h1>Ejercicio presupuesto tetris</h1>
+    </header>
+    <main>
+
+
+        <!-- Sección de piezas disponibles -->
+        <section id="piezasDisponibles">
+            <div id="contenedorPiezas">
+                <img src="./imagenes/amarillo.png" class="pieza" draggable="true" data-color="amarillo"
+                    alt="pieza amarilla">
+                <img src="./imagenes/azul.png" class="pieza" draggable="true" data-color="azul" alt="pieza azul">
+                <img src="./imagenes/celeste.png" class="pieza" draggable="true" data-color="celeste"
+                    alt="pieza celeste">
+                <img src="./imagenes/morado.png" class="pieza" draggable="true" data-color="morado" alt="pieza morada">
+                <img src="./imagenes/naranja.png" class="pieza" draggable="true" data-color="naranja"
+                    alt="pieza naranja">
+                <img src="./imagenes/rojo.png" class="pieza" draggable="true" data-color="rojo" alt="pieza roja">
+                <img src="./imagenes/verde.png" class="pieza" draggable="true" data-color="verde" alt="pieza verde">
+
+                <!-- Barra de control -->
+                <div class="configuracion">
+                    <button id="borrarPresupuesto">Borrar Presupuesto</button>
+                    <label>Margen Comercial (%) <input type="number" id="margen" min="0" max="100"></label>
+                    <label>IVA (%) <input type="number" id="iva" min="0" max="100"></label>
+                </div>
+            </div>
+        </section>
+
+        <!-- Zona central -->
+        <section id="zonaPrincipal">
+            <!-- Panel izquierdo con precios -->
+            <aside id="panelIzquierdo">
+                <h3>Información</h3>
+                <ul id="listaPrecios">
+                    <!-- Se llenará desde el JSON -->
+                </ul>
+                <button id="actualizarPrecios">Actualizar Precios</button>
+            </aside>
+
+            <!-- Tabla de presupuesto -->
+            <section id="presupuesto">
+                <h3>Presupuesto</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Pieza</th>
+                            <th>Cantidad</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tablaPresupuesto">
+                        <!-- Se añaden filas dinámicamente -->
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="2">Total Bruto</td>
+                            <td id="totalBruto">€0.00</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">Total con margen</td>
+                            <td id="totalConMargen">€0.00</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">Total con IVA</td>
+                            <td id="totalConIVA">€0.00</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Página de Javier Juárez Canals. (Casi)Todos los derechos reservados.</p>
+        <a href="../index.html">Vuelta al índice</a>
+
+    </footer>
+    <script src="./tetris.js"></script>
+</body>
+
+</html>
