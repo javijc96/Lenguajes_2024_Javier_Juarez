@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Fabric.js - Polígonos y Figuras Modificables</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/5.2.4/fabric.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: whitesmoke;
+            margin: 0;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        header {
+            position: absolute;
+            top: 0;
+            text-align: center;
+            background-color: green;
+            color: white;
+            padding: 1.5em;
+            width: 100%;
+            border-radius: 8px;
+            filter: drop-shadow(10px 1px 12px rgba(35, 173, 0, 0.67));
+        }
+
+        footer {
+            position: absolute;
+            bottom: 0;
+            background-color: green;
+            color: white;
+            padding: 0.5em 0;
+            width: 100%;
+        }
+
+        #zonaDestino {
+            width: 600px;
+            height: 400px;
+            border: 1px solid #ccc;
+            background-color: white;
+            margin-top: 120px;
+            position: relative;
+        }
+
+        #controls {
+            margin-top: 20px;
+        }
+
+        label,
+        select,
+        input,
+        button {
+            margin-right: 10px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>Figuras con Fabric.js</h2>
+    </header>
+
+    <h2>Área de dibujo</h2>
+    <div id="zonaDestino">
+        <canvas id="c" width="600" height="400"></canvas>
+    </div>
+
+    <div id="controls">
+        <label for="shapeSelect">Figura:</label>
+        <select id="shapeSelect">
+            <option value="triangle">Triángulo</option>
+            <option value="square">Cuadrado</option>
+            <option value="pentagon">Pentágono</option>
+            <option value="circle">Círculo</option>
+            <option value="polygon">Polígono (4 lados)</option>
+        </select>
+
+        <label for="colorPicker">Color:</label>
+        <input type="color" id="colorPicker" value="#FF0000" />
+
+        <label for="scaleRange">Escala:</label>
+        <input type="range" id="scaleRange" min="0.1" max="3" step="0.1" value="1" />
+
+        <button id="addShapeBtn">Añadir Figura</button>
+    </div>
+
+    <footer>Autor: Javier Juárez Canals</footer>
+
+    <script>
+        const canvas = new fabric.Canvas('c');
+
+        // Funciones para crear polígonos regulares
+        function regularPolygonPoints(sides, radius) {
+            const angle = (2 * Math.PI) / sides;
+            const points = [];
+            for (let i = 0; i < sides; i++) {
+                points.push({
+                    x: radius * Math.cos(i * angle - Math.PI / 2),
+                    y: radius * Math.sin(i * angle - Math.PI / 2)
+                });
+            }
+            return points;
+        }
+
+        function crearFigura(tipo, color) {
+            let figura;
+            const left = 200;
+            const top = 100;
+            const stroke = 'black';
+            const strokeWidth = 2;
+            const radius = 50;
+
+            switch (tipo) {
+                case 'triangle':
+                    figura = new fabric.Polygon(regularPolygonPoints(3, radius), {
+                        left,
+                        top,
+                        fill: color,
+                        stroke,
+                        strokeWidth,
+                        selectable: true,
+                        objectCaching: false
+                    });
+                    break;
+
+                case 'square':
+                    // Cuadrado como polígono regular de 4 lados
+                    figura = new fabric.Polygon(regularPolygonPoints(4, radius), {
+                        left,
+                        top,
+                        fill: color,
+                        stroke,
+                        strokeWidth,
+                        selectable: true,
+                        objectCaching: false
+                    });
+                    break;
+
+                case 'pentagon':
+                    figura = new fabric.Polygon(regularPolygonPoints(5, radius), {
+                        left,
+                        top,
+                        fill: color,
+                        stroke,
+                        strokeWidth,
+                        selectable: true,
+                        objectCaching: false
+                    });
+                    break;
+
+                case 'circle':
+                    // Para círculo usamos fabric.Circle
+                    figura = new fabric.Circle({
+                        left,
+                        top,
+                        radius,
+                        fill: color,
+                        stroke,
+                        strokeWidth,
+                        selectable: true,
+                        objectCaching: false
+                    });
+                    break;
+
+                case 'polygon':
+                    // Polígono de 4 lados (como cuadrado con puntos personalizados)
+                    const points = [
+                        { x: 0, y: 0 },
+                        { x: 100, y: 50 },
+                        { x: 50, y: 150 },
+                        { x: -50, y: 100 },
+                    ];
+                    figura = new fabric.Polygon(points, {
+                        left,
+                        top,
+                        fill: color,
+                        stroke,
+                        strokeWidth,
+                        selectable: true,
+                        objectCaching: false
+                    });
+                    break;
+
+                default:
+                    alert('Tipo de figura no soportado');
+                    return;
+            }
+
+            canvas.add(figura);
+            canvas.setActiveObject(figura);
+        }
+
+        document.getElementById('addShapeBtn').addEventListener('click', () => {
+            const tipo = document.getElementById('shapeSelect').value;
+            const color = document.getElementById('colorPicker').value;
+            crearFigura(tipo, color);
+        });
+
+        document.getElementById('colorPicker').addEventListener('change', (e) => {
+            const activeObj = canvas.getActiveObject();
+            if (activeObj) {
+                activeObj.set('fill', e.target.value);
+                canvas.requestRenderAll();
+            }
+        });
+
+        document.getElementById('scaleRange').addEventListener('input', (e) => {
+            const activeObj = canvas.getActiveObject();
+            if (activeObj) {
+                const scale = parseFloat(e.target.value);
+                activeObj.scaleX = scale;
+                activeObj.scaleY = scale;
+                canvas.requestRenderAll();
+            }
+        });
+    </script>
+
+</body>
+
+</html>

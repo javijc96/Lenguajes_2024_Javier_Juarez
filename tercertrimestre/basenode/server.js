@@ -1,40 +1,48 @@
-// Importa el módulo 'http' de Node.js
-const http = require("http");
+const http = require('http');
+const fs = require('fs');
+const path = require('path');
 
-// Módulo 'fs' para escribir archivos
-const fs = require("fs");
+const PORT = 3000;
 
-// Módulo 'util' para convertir objetos complejos a texto
-const util = require("util");
+const server = http.createServer((req, res) => {
+    // Definir la ruta base de los archivos
+    let filePath = '';
 
-// Crea el servidor
-const servidor = http.createServer((req, res) => {
-    // Establece cabeceras de respuesta
-    res.writeHead(200, { "Content-Type": "text/plain" });
+    // Elegimos el archivo según la ruta
+    switch (req.url) {
+        case '/':
+            filePath = path.join(__dirname, 'index.html');
+            break;
+        case '/archivo1':
+            filePath = path.join(__dirname, 'archivo1.html');
+            break;
+        case '/archivo2':
+            filePath = path.join(__dirname, 'archivo2.html');
+            break;
+        default:
+            // Si la ruta no coincide, mostramos error 404
+            res.statusCode = 404;
+            res.setHeader('Content-Type', 'text/plain');
+            res.end('404 No encontrado');
+            return;
+    }
 
-    // Muestra un mensaje por consola
-    console.log("eldiablo");
-
-    // Convierte el objeto 'req' a texto legible
-    const contenido = util.inspect(req, { depth: null });
-
-    // Escribe el contenido en un archivo llamado 'registro.txt'
-    fs.writeFile("registro.txt", contenido, (err) => {
+    // Leemos el archivo HTML solicitado
+    fs.readFile(filePath, (err, data) => {
         if (err) {
-            console.error("Error al guardar el archivo:", err);
+            // Si hay error leyendo el archivo, enviamos error 500
+            res.statusCode = 500;
+            res.setHeader('Content-Type', 'text/plain');
+            res.end('Error interno del servidor');
         } else {
-            console.log("Petición guardada en 'registro.txt'");
+            // Si todo va bien, enviamos el archivo con el content-type adecuado
+            res.statusCode = 200;
+            res.setHeader('Content-Type', 'text/html');
+            res.end(data);
         }
     });
-
-    // Respuesta al cliente
-    res.end("Hola mundo desde el servidor con Node.js");
 });
 
-// Puerto donde escucha el servidor
-const puerto = 3000;
-
-// Inicia el servidor
-servidor.listen(puerto, () => {
-    console.log(`Servidor escuchando en http://localhost:${puerto}`);
+server.listen(PORT, () => {
+    console.log(`Servidor ejecutándose en http://localhost:${PORT}/`);
 });
